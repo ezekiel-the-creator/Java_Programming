@@ -116,4 +116,18 @@ public class ControlFlow {
     private static int getInitiatialValue() {
         return 0;
     }
+
+    public static void exception(){
+        System.out.println("\nException statements: ");
+        int x = 50;
+        try {
+    
+            if(x>30){
+                throw new RuntimeException("The x value is out of range: " + x);
+                }
+                
+            } catch (RuntimeException ex){
+                System.out.println(ex.getMessage());
+        }
+    }
 }
