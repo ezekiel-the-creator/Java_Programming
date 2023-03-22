@@ -31,6 +31,7 @@ public class ControlFlow {
         }
 
         //Switch statement
+        System.out.println("\nWeek day: ");
         switch (x) {
             case 1:
                 System.out.println("Today is Monday");
@@ -59,6 +60,7 @@ public class ControlFlow {
         }
 
         //Enhanced switch statement
+        System.out.println("\nEnhanced Switch Statements output: ");
         switch(x){
             case 1, 7 -> System.out.println("x is 1 or 7");
             case 2 -> System.out.println("x is 2");
@@ -140,5 +142,10 @@ public class ControlFlow {
             } catch (RuntimeException ex){
                 System.out.println(ex.getMessage());
         }
+    }
+
+    public static void branching(){
+        System.out.println("\nBranching Statements");
+
     }
 }
