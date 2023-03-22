@@ -66,6 +66,17 @@ public class ControlFlow {
             default -> System.out.println("x is not 1,3,4,5,6");
         }
     }
+
+    //Switch...case expressions, happens when a switch case has a return value
+    boolean switchExpresion(int x){
+        boolean b = switch(x){
+            case 0, 1 -> false;
+            case 2 -> true;
+            default -> false;
+        };
+        System.out.println(b);
+        return b;
+    }
     
     //Iteration statements: while, do while, for, 
     public static void iteration(){
