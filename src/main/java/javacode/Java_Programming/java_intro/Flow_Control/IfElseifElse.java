@@ -2,7 +2,7 @@ package javacode.Java_Programming.java_intro.Flow_Control;
 
 public class IfElseifElse {
     public static void main(String... args){
-        int age = 32;
+        int age = 39;
 
         if (age < 18){
             System.out.println("You are a minor.");
