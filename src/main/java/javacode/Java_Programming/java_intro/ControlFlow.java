@@ -1,5 +1,6 @@
 package javacode.Java_Programming.java_intro;
 
+import java.util.List;
 import java.util.Random;
 
 public class ControlFlow {
@@ -146,6 +147,16 @@ public class ControlFlow {
 
     public static void branching(){
         System.out.println("\nBranching Statements");
+        System.out.println("\nBreak statements");
 
+        int[] numbers = {1, 2, 3, 4, 4, 5};
+        
+        for (int i = 0; i < numbers.length; i++){
+            if(numbers[i] % 2 == 0){
+                System.out.println("Found an even number: " + numbers[i]);
+                break;
+            }
+            System.out.println("Current number is: " + numbers[i]);
+        }
     }
 }
