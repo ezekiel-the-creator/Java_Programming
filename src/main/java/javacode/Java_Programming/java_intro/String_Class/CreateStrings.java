@@ -7,7 +7,7 @@ public class CreateStrings {
         String greeting = "Hello, world!";
         System.out.println(greeting);
         //Using `new` keyword
-        String name = new String("Zak");
+        String name = new String("Ezekiel");
         System.out.println(name);
     }
 }
