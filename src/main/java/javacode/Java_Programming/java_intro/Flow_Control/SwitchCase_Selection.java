@@ -2,7 +2,7 @@ package javacode.Java_Programming.java_intro.Flow_Control;
 
 public class SwitchCase_Selection {
     public static void main(String... args){
-        int dayOfWeek = 2;
+        int dayOfWeek = 5;
 
         switch (dayOfWeek){
             case 1:
