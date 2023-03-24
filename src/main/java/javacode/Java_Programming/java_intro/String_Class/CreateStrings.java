@@ -1,6 +1,6 @@
 package javacode.Java_Programming.java_intro.String_Class;
 
-public class CreatingStrings {
+public class CreateStrings {
     public static void main(String... args){
         //Creating a new String object
         //Using String Literal
