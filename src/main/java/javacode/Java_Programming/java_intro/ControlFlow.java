@@ -1,6 +1,4 @@
 package javacode.Java_Programming.java_intro;
-
-import java.util.List;
 import java.util.Random;
 
 public class ControlFlow {
