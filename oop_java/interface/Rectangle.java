@@ -1,4 +1,4 @@
-public class Rectangle implements Shape{
+public class Rectangle implements ShapeInterface{
     private double length;
     private double width;
 
