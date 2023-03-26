@@ -20,5 +20,6 @@ public class Car extends Vehicle {
         Car newCar = new Car("Nissan", "GTR", 2022, 4);
         newCar.drive(123);
         newCar.stop();
+        System.out.println("Number of doors: " +newCar.getNumDoors());
     }
 }
