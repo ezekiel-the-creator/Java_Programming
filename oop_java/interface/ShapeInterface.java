@@ -4,3 +4,5 @@ interface ShapeInterface{
     double getArea();
     double getPerimeter();
 }
+
+//It allows flexibility and consistency in the implementation of a certain functionality.
