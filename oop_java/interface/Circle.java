@@ -1,4 +1,4 @@
-public class Circle implements Shape {
+public class Circle implements ShapeInterface {
     private double radius;
 
     public Circle(double radius){
