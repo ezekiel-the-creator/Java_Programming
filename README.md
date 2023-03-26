@@ -1,7 +1,6 @@
 # **Java_Programming**
 
-*Java is a popular, general-purpose programming language developed by Sun Microsystems.
-It is platform indipendent, object-oriented, and has a strong emphasis on security.*
+Java is a popular high-level programming language that was developed by James Gosling at Sun Microsystems. It is a general purpose programming language used for developing mobile, web, desktop and server-side applications.
 
 ### **Features:**
 
