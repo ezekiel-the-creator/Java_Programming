@@ -1,3 +1,5 @@
+//Method overloading is ability to define multiple methods with the same name in a single class, but with different parameters.
+
 public class Calculator {
     public int add (int a, int b){
         return a + b;
