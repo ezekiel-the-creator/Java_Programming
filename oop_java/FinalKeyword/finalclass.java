@@ -1,4 +1,4 @@
-//A final class cannot be extended by any subclass, trying to do so will result to a comp
+//A final class cannot be extended by any subclass, trying to do so will result to a compile time error
 
 public final class finalclass {
     int a;
