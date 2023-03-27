@@ -1,3 +1,5 @@
+//final methods cannot be overriden by a subclass
+
 public class Vehicle {
     int weight;
     int baseArea;
@@ -8,3 +10,5 @@ public class Vehicle {
         return speed;
     }
 }
+
+//trying to override speedometer() will result to a compile time error.
