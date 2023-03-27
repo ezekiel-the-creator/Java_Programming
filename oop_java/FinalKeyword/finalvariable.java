@@ -7,3 +7,6 @@ public class finalvariable {
         System.out.println(MAX_VALUE);
     }
 }
+
+
+//Trying to modify the value of MAX_VALUE in the main method will result to a compile-time error
