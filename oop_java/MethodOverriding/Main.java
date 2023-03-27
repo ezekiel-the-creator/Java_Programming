@@ -9,4 +9,4 @@ public class Main {
     }
 }
 
-//A private method cannot be overriden.
+//A private methods can neither be inherited or overriden.
