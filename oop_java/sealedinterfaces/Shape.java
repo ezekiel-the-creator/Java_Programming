@@ -3,3 +3,5 @@
 public sealed interface Shape permits Circle, Square{
     //...
 }
+
+//sealed interfaces provide better control over interface hierarchies in java
