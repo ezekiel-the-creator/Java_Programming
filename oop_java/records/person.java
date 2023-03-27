@@ -9,4 +9,6 @@ public record Person(String name, int age){}
 
 Person Zak = new Person("Zak", 20);
 
+//Accessing data
+
 System.out.println(Zak.name());
