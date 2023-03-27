@@ -8,3 +8,5 @@ public class Main {
         lion.makeSound();//The method in the subclass Lion gets implemented here.
     }
 }
+
+//A private method cannot be overriden.
