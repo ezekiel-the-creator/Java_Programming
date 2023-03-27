@@ -1,6 +1,7 @@
 //A sealed class in java is one that restricts the set of classes that can extend it.
 //It provides better control and encapsulation of a class hierarchy by allowing only a specific set of subclasses to be created.
 
+//declaring a sealed class
 public sealed class Vehicle permits Car, Truck, Motorcycle {
     // properties and methods
 }
