@@ -9,6 +9,10 @@ public class ShapeFactory {
         }
     }
 
-    Shape circle = ShapeFactory.createShape("circle");
-    Shape rectangle = ShapeFactory.createShape("rectangle");
+    public static void main(String[] args) {
+        Shape circle = ShapeFactory.createShape("circle");
+        Shape rectangle = ShapeFactory.createShape("rectangle");
+        
+        System.out.println(circle);
+    }
 }
