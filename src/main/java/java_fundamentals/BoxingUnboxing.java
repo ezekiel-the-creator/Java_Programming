@@ -23,6 +23,9 @@ public class BoxingUnboxing{
         Short s = Short.valueOf((short)i1);
         System.out.println(s);
 
+        Float v = Float.valueOf((float)i1);
+        System.out.println(v);
+
         
     }
 }
