@@ -5,6 +5,7 @@ public class ReferenceTypes {
         array1();
         array2();
         array3();
+        enumDemo();
     }
 
     private static void array1(){
@@ -55,7 +56,7 @@ public class ReferenceTypes {
     }
 
     enum Season2 {
-        SPRING(temperature:42), SUMMER(temperature:67), AUTUMN(temperature:32), WINTER(temperature:20);
+        SPRING(42), SUMMER(67), AUTUMN(32), WINTER(20);
         private int temperature;
         Season2(String temperature){
             this.temperature = Integer.valueOf(temperature);
@@ -66,13 +67,13 @@ public class ReferenceTypes {
         public int getTemperature(){
             return this.temperature;
         }
-        public String toString(){
+        public String toString() {
             return this.name().charAt(0) +
-                    this.name().substring(1).toLowerCase() + 
+                    this.name().substring(1).toLowerCase() +
                     "(" + this.temperature + ")";
-
         }
     }
+    
 
     private static void enumDemo(){
         System.out.println(Season.SPRING.name());

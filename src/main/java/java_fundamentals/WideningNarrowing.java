@@ -42,5 +42,10 @@ public class WideningNarrowing {
         long l1 = 12345678L;
         float f1 = Long.valueOf(l1).floatValue();
         System.out.println(l1 - (long)f1);
+
+        double d3 = 3455389.0;
+        int i7 = Double.valueOf(d3).intValue();
+        System.out.println(i7);
+        
     }
 }
