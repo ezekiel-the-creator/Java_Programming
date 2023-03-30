@@ -49,5 +49,8 @@ public class BoxingUnboxing{
 
         float f = i1.floatValue();
         System.out.println(f);
+
+        double d = i1.doubleValue();
+        System.out.println(d);
     }
 }
