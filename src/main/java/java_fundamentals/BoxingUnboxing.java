@@ -40,5 +40,8 @@ public class BoxingUnboxing{
 
         byte b = i1.byteValue();
         System.out.println(b);
+
+        short s = i1.shortValue();
+        System.out.println(s);
     }
 }
