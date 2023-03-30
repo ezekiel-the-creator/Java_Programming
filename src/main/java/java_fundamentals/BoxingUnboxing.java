@@ -20,6 +20,9 @@ public class BoxingUnboxing{
         Byte b = Byte.valueOf((byte)i1);
         System.out.println(b);
 
+        Short s = Short.valueOf((short)i1);
+        System.out.println(s);
+
         
     }
 }
