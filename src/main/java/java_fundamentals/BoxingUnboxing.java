@@ -52,5 +52,10 @@ public class BoxingUnboxing{
 
         double d = i1.doubleValue();
         System.out.println(d);
+
+        long l1 = i1;               //implicit unboxing
+        System.out.println(l1);
+
+
     }
 }
