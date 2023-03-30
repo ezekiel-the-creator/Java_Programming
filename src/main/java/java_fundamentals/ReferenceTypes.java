@@ -32,6 +32,14 @@ public class ReferenceTypes {
         float[][] floatArray = new float[3][];
         System.out.println(floatArray.length);
         System.out.println(floatArray[0]);
+        System.out.println(floatArray[1]);
+        System.out.println(floatArray[2]);
+        //System.out.println(floatArray[3]);    //error
+        System.out.println(floatArray[2][2]);
 
+        floatArray[0] = new float[4];
+        floatArray[1] = new float[3];
+        floatArray[2] = new float[7];
+        System.out.println(floatArray[2][6]);   //prints: 0.0
     }
 }
