@@ -44,4 +44,53 @@ public class ReferenceTypes {
         floatArray[2] = new float[7];
         System.out.println(floatArray[2][5]);   //prints: 0.0
     }
+
+    enum Season { SPRING, SUMMER, AUTUMN, WINTER}
+
+    enum Season1 {
+        SPRING, SUMMER, AUTUMN, WINTER;
+        public String toString(){
+            return this.name().charAt(0) + this.name().substring(1).toLowerCase();
+        }
+    }
+
+    enum Season2 {
+        SPRING(temperature:42), SUMMER(temperature:67), AUTUMN(temperature:32), WINTER(temperature:20);
+        private int temperature;
+        Season2(String temperature){
+            this.temperature = Integer.valueOf(temperature);
+        }
+        Season2(int temperature){
+            this.temperature = temperature;
+        }
+        public int getTemperature(){
+            return this.temperature;
+        }
+        public String toString(){
+            return this.name().charAt(0) +
+                    this.name().substring(1).toLowerCase() + 
+                    "(" + this.temperature + ")";
+
+        }
+    }
+
+    private static void enumDemo(){
+        System.out.println(Season.SPRING.name());
+        System.out.println(Season.WINTER.toString());
+        System.out.println(Season.AUTUMN.ordinal());
+        Season season = Enum.valueOf(Season.class, "SUMMER");
+        System.out.println(season == Season.SUMMER);
+
+        for(Season s: Season.values()){
+            System.out.print(s.name() + " ");
+        }
+        System.out.println();
+        for(Season1 s: Season1.values()){
+            System.out.print(s.toString() + " ");
+        }
+        System.out.println();
+        for(Season2 s: Season2.values()){
+            System.out.println(s.toString() + " ");
+        }    
+    }
 }
