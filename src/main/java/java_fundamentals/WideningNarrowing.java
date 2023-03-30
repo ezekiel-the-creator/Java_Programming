@@ -2,7 +2,8 @@ package java_fundamentals;
 
 public class WideningNarrowing {
     public static void main(String... args){
-        
+        widening();
+        narrowing();
     }
 
     private static void widening(){
@@ -25,5 +26,14 @@ public class WideningNarrowing {
         long l4 =1234567891111111L;
         double d4 = (double)l4;
         System.out.println(l4 - (long)d4);
+    }
+
+    private static void narrowing(){
+        System.out.println(Integer.MAX_VALUE);//2147483647
+        double d2 = 1234557.0;
+        System.out.println(d2);//prints1234557
+
+        double d9 = 12345678909999999999999.0;//Integer type isn't enough to hold all this figure
+        System.out.println((int)d9);//prints 2147483647
     }
 }
