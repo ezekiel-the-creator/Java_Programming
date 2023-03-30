@@ -2,30 +2,31 @@ package java_fundamentals;
 
 public class ReferenceTypes {
     public static void main(String... args){
-
+        array1();
+        array2();
     }
 
     private static void array1(){
         int[] intArray = new int[4];
-        float[][] floatArray = new float[3][6];
+        float[][] floatArray = new float[6][6];
         String[] stringArray = new String[5];
 
         //elements of an array are initialized to default values at their creation time
 
         System.out.println(intArray[1]);//0
-        System.out.println(floatArray[4]);//0.0
+        System.out.println(floatArray[0][0]);//0.0
         System.out.println(stringArray[2]);//null
     }
 
     private static void array2(){
         //creating an array using an array initializer.
         int[] intArray = {3, 4, 5, 6, 0, 2, 1};
-        float[][] floatArray = {{23.4f, 587.0f, 2.4f}, {4, 8, 8.3f}};
+        float[][] floatArray = {{23.4f, 587.0f, 2.4f, 9.7f}, {4, 8, 8.3f,12}};
         String[] stringArray = {"Put it down on paper","nataraj"};
 
         System.out.println(intArray[5]);
-        System.out.println(floatArray[1][3]);
-        System.out.println(stringArray[1]);
+        System.out.println(floatArray[0][1]);
+        System.out.println(stringArray[0]);
     }
 
     public static void array3(){
