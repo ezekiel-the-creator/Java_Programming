@@ -16,5 +16,10 @@ public class BoxingUnboxing{
 
         i2 = Integer.valueOf(i1);//boxing
         System.out.println(i2);
+
+        Byte b = Byte.valueOf((byte)i1);
+        System.out.println(b);
+
+        
     }
 }
