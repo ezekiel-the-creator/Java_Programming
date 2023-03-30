@@ -34,6 +34,11 @@ public class BoxingUnboxing{
     }
 
     private static void unboxing(){
-        
+        Integer i1 = Integer.valueOf(43);
+        int i2 = i1.intValue();
+        System.out.println(i2);
+
+        byte b = i1.byteValue();
+        System.out.println(b);
     }
 }
