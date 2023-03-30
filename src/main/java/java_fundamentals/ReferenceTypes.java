@@ -76,9 +76,11 @@ public class ReferenceTypes {
     
 
     private static void enumDemo(){
-        System.out.println(Season.SPRING.name());
-        System.out.println(Season.WINTER.toString());
-        System.out.println(Season.AUTUMN.ordinal());
+
+        //frequently used methods of the java.lang.Enum class
+        System.out.println(Season.SPRING.name());//returns the enum constant identifier as it is spelled
+        System.out.println(Season.WINTER.toString());//return the same value as name but can be overriden to return any string value
+        System.out.println(Season.AUTUMN.ordinal());//returns the position of the enum
         Season season = Enum.valueOf(Season.class, "SUMMER");
         System.out.println(season == Season.SUMMER);
 
