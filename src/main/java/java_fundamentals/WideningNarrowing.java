@@ -4,6 +4,7 @@ public class WideningNarrowing {
     public static void main(String... args){
         widening();
         narrowing();
+        usingWrapperClasses();
     }
 
     private static void widening(){
@@ -35,5 +36,11 @@ public class WideningNarrowing {
 
         double d9 = 12345678909999999999999.0;//Integer type isn't enough to hold all this figure
         System.out.println((int)d9);//prints 2147483647
+    }
+
+    private static void usingWrapperClasses(){
+        long l1 = 12345678L;
+        float f1 = Long.valueOf(l1).floatValue();
+        System.out.println(l1 - (long)f1);
     }
 }
