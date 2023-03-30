@@ -13,6 +13,11 @@ public class WideningNarrowing {
         long l1 = 12345678L;
         float f1 = (float)l1;
         System.out.println(l1 - (long)f1);
+
+        long l2 = 123456789L;
+        float f2 = (float)l2;
+        System.out.println(l2 - (long)f2);
+
         
     }
 }
