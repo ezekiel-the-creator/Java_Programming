@@ -26,6 +26,10 @@ public class BoxingUnboxing{
         Float v = Float.valueOf((float)i1);
         System.out.println(v);
 
-        
+        Long l = Long.valueOf((long)i1);
+        System.out.println(l);
+
+        Double d = Double.valueOf((double)i1);
+        System.out.println(d);
     }
 }
