@@ -43,5 +43,11 @@ public class BoxingUnboxing{
 
         short s = i1.shortValue();
         System.out.println(s);
+
+        long l = i1.longValue();
+        System.out.println(l);
+
+        float f = i1.floatValue();
+        System.out.println(f);
     }
 }
