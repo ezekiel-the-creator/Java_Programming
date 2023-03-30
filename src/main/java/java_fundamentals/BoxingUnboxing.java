@@ -32,4 +32,8 @@ public class BoxingUnboxing{
         Double d = Double.valueOf((double)i1);
         System.out.println(d);
     }
+
+    private static void unboxing(){
+        
+    }
 }
