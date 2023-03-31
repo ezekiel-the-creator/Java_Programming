@@ -21,23 +21,24 @@ public class framework {
     private static void catchException1(){
         System.out.println();
         try {
-            method(s:null);
-        } catch(Exception ex){
-            System.out.println("CatcException1():");
+            method(null);
+        } catch (Exception ex){
+            System.out.println("catchException1():");
             System.out.println(ex.getClass().getCanonicalName());
             waitForStackTrace();
-            ex.printStackTrace();
+            ex.printStackTrace(); 
             if(ex instanceof NullPointerException){
-
+                
             } else {
                 
             }
         }
     }
 
+
     private static void catchException2(){
         try {
-            method(s:null);
+            method(null);
         } catch (NullPointerException ex){
             System.out.println("\ncatchException2():");
             waitForStackTrace();
@@ -51,7 +52,7 @@ public class framework {
     private static void catchException3(){
         Exception exception = null;
         try {
-            method(s:null);
+            method(null);
         } catch (NullPointerException ex){
             System.out.println("\ncatchException3():");
             exception = ex;
