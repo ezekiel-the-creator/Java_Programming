@@ -1,5 +1,7 @@
 package exception_handling;
 
+import java.util.concurrent.TimeUnit;
+
 public class framework {
     
     public static void main(String... args){
@@ -43,6 +45,20 @@ public class framework {
         } catch(Exception ex){
             waitForStackTrace();
             ex.printStackTrace();
+        }
+    }
+
+    private static void catchException3(){
+        Exception exception = null;
+        try {
+            method(s:null);
+        } catch (NullPointerException ex){
+            System.out.println("\ncatchException3():");
+            exception = ex;
+        } catch (Exception ex){
+            exception = ex;
+        } finally {
+            if(exception != n)
         }
     }
 }
