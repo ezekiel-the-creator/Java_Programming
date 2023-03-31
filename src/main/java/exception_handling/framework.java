@@ -58,7 +58,10 @@ public class framework {
         } catch (Exception ex){
             exception = ex;
         } finally {
-            if(exception != null)
+            if(exception != null){
+                waitForStackTrace();
+                exception.printStackTrace();
+            }
         }
     }
 }
