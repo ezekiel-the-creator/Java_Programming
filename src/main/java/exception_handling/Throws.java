@@ -34,7 +34,6 @@ public class Throws {
 
         try (conn; rs) {
             while (rs.next()) {
-                //process the retrieved data
             }
         } finally { }
     }
