@@ -58,7 +58,7 @@ public class framework {
         } catch (Exception ex){
             exception = ex;
         } finally {
-            if(exception != n)
+            if(exception != null)
         }
     }
 }
