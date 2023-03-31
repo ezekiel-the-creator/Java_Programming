@@ -64,4 +64,10 @@ public class framework {
             }
         }
     }
+
+    private static void waitForStackTrace(){
+        try {
+            TimeUnit.MILLISECONDS.sleep(101);
+        } catch (InterruptedException e) {}
+    }
 }
