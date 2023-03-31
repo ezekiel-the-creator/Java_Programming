@@ -26,8 +26,23 @@ public class framework {
             waitForStackTrace();
             ex.printStackTrace();
             if(ex instanceof NullPointerException){
+
+            } else {
                 
             }
+        }
+    }
+
+    private static void catchException2(){
+        try {
+            method(s:null);
+        } catch (NullPointerException ex){
+            System.out.println("\ncatchException2():");
+            waitForStackTrace();
+            ex.printStackTrace();
+        } catch(Exception ex){
+            waitForStackTrace();
+            ex.printStackTrace();
         }
     }
 }
