@@ -23,8 +23,6 @@ public class Throws {
                 //process the retrieved data
             }
         } catch (SQLException ex) {
-            //Do something
-            //The exception was probably caused by incorrect SQL statement
         }
     }
 
