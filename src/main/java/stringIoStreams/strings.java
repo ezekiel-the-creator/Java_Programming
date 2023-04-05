@@ -39,6 +39,12 @@ public class strings {
         System.out.println(s1.equals(s3));
         System.out.println("abc".equals(s2));
         System.out.println("abc".equals(s3));
+
+        String s4 = "ezekiel";
+        String s5 = "Ezekiel";
+
+        System.out.println(s4.equalsIgnoreCase(s5));
+        System.out.println(s4.equals(s5));
     }
 
     private static void contains(){
