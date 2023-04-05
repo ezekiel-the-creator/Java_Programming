@@ -1,5 +1,5 @@
 package stringIoStreams;
 
-public class ConsoleDemo {
+public class strings {
     
 }
