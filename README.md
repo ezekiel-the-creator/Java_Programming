@@ -23,3 +23,5 @@ Java can be used for a wide range of applications, including desktop, web, and m
 
 # **Java Syntax**
 
+```java
+public class Myprogram{}
