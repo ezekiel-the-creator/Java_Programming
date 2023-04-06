@@ -3,7 +3,7 @@ package oop_java.abstraction;
 import java.text.NumberFormat.Style;
 
 public abstract class Mortobike {
-    abstract void brake();
+    abstract void brake();//the implementation of the brake is kept hidden.
 }
 
 class SportsBike extends Mortobike {
