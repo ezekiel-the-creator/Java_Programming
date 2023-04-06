@@ -26,5 +26,6 @@ Java can be used for a wide range of applications, including desktop, web, and m
 ```java
 public class HelloWorld{
   public static void main(String... args) {
-    
+    System.out.println("Hello, world!");
+  }
 }
