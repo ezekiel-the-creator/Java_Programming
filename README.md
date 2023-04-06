@@ -32,7 +32,9 @@ Each Java language construct has its own unique syntax that specifies how it is 
 ```java
 public class Myclass {
   //body of the class
-}```
+}
+```
+
 The class body is where the properties and behaviour of a class is defined.
 
 #### ***Variable declaration syntax***
@@ -40,5 +42,7 @@ The class body is where the properties and behaviour of a class is defined.
 
 ```java
 public class Myclass {
-  public int x; //variable x declared with access modifier public
+  public int x; //variable x declared with access modifier public and data type int
   private String name; //Property name declared with access modifier private and data type String
+}
+```
