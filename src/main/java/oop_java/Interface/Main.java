@@ -6,6 +6,7 @@ public class Main {
         Shape circle = new Circle(5);
         Shape rectangle = new Rectangle(3, 4);
         ProgrammingLanguage language = new ProgrammingLanguage();
+        language.getName("java");
 
         System.out.println("circle area: " + circle.getArea());//getArea method defined in class Circle is implemented
         System.out.println("Circle perimete: " + circle.getPerimeter());
