@@ -11,7 +11,7 @@ public abstract class Animal {
 class Dog extends Animal {
     //implementation of te abstract method
     public void makeSound() {
-        System.out.println("woof woof");
+        System.out.println("Bark bark");
     }
 }
 
