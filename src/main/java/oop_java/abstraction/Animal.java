@@ -15,12 +15,5 @@ class Dog extends Animal {
     }
 }
 
-class Main {
-    public static void main(String... args){
-        Dog delta = new Dog();
-        delta.makeSound();
-        delta.eat();
-    }
-}
-
+//if the subclass doesn't provide the implemantation of the abstract methdod declared in the super class, then it should also be declared an abstract class.
 //if an abstract class have a constructor it can be accessed in the child class using super keyword.

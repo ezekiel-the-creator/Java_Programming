@@ -11,5 +11,8 @@ class Main extends Language {
         Main obj = new Main();
 
         obj.display();
+        Dog delta = new Dog();
+        delta.makeSound();
+        delta.eat();
     }
 }
