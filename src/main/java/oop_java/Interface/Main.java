@@ -7,6 +7,7 @@ public class Main {
         Shape rectangle = new Rectangle(3, 4);
         ProgrammingLanguage language = new ProgrammingLanguage();
         rectangle.getSides();
+        circle.getSides();
         language.getName("java");
         circle.getName("Circle drawer");
 
