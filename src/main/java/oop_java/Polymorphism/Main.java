@@ -6,5 +6,6 @@ public class Main {
         s1.render();
 
         Circle c1 = new Circle();
+        c1.render();
     }
 }
