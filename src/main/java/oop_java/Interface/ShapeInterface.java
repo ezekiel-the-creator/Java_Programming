@@ -2,7 +2,7 @@ package oop_java.Interface;
 
 //An interface is a collection of abstract methods and constant variables that must be implemented by any class that uses the interface.
 
-interface Shape{
+interface Shape extends Language {
 
     //method signatures
     
