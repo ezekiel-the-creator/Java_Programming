@@ -13,6 +13,6 @@ public class Area {
     //method to calculate area
     public void getArea() {
         int area = length * width;
-        System.
+        System.out.println("Area = ");
     }
 }
