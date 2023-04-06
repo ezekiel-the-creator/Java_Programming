@@ -8,6 +8,9 @@ interface Shape extends Language {
     
     double getArea();
     double getPerimeter();
+    default void getSides() {
+        System.out.println("I can get the sides of a polygon.");
+    }
 }
 
 //It allows flexibility and consistency in the implementation of a certain functionality.
