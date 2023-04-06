@@ -23,10 +23,6 @@ Java can be used for a wide range of applications, including desktop, web, and m
 
 # **Java Syntax**
 
-```java
-public class HelloWorld{
-  public static void main(String... args) {
-    System.out.println("Hello, world!");
-  }
-}
-```
+*Java Syntax* is a set of rules that we follow when we are writing programs in java programming language. We use words like "class" and "public" to tell the computer what we want to do and symbols like curly braces {} and parantheses to group things together and make our program easier to read.
+
+Each Java language construct has its own unique syntax that specifies how it is written and used in java program.By following the correct syntax for each costruct, we can ensure that our java programs are correct and functional.
