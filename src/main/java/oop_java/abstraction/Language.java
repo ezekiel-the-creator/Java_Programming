@@ -7,5 +7,9 @@ public abstract class Language {
 }
 
 class Main extends Language {
-    public class static
+    public static void main(String... args){
+        Main obj = new Main();
+
+        obj.display();
+    }
 }
