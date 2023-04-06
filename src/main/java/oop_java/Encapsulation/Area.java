@@ -9,4 +9,10 @@ public class Area {
         this.length = length;
         this.width = width;
     }
+
+    //method to calculate area
+    public void getArea() {
+        int area = length * width;
+        System.
+    }
 }
