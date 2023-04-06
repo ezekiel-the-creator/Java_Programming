@@ -5,14 +5,3 @@ public abstract class Language {
     System.out.println("This is java programming");
    }
 }
-
-class Main extends Language {
-    public static void main(String... args){
-        Main obj = new Main();
-
-        obj.display();
-        Dog delta = new Dog();
-        delta.makeSound();
-        delta.eat();
-    }
-}
