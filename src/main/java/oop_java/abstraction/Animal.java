@@ -22,3 +22,5 @@ class Main {
         delta.eat();
     }
 }
+
+//if an abstract class have a constructor it can be accessed in the child class using super keyword.
