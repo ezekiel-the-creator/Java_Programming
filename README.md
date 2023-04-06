@@ -19,3 +19,7 @@ Java has a strong emphasis on security, making it a popular choice for developin
 * *Versatility.*
 
 Java can be used for a wide range of applications, including desktop, web, and mobile applications, as well as embedded systems and server-side applications.
+
+
+# **Java Syntax**
+
