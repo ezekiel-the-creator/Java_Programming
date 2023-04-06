@@ -3,6 +3,11 @@ package oop_java.Interface;
 public class Circle implements Language, Shape {
     private double radius;
 
+
+    @Override
+    public void getSides(){
+        System.out.println("I am a circle, I don't have any sides, but I don't mind cause I'm still cool");
+    }
     public void getName(String name) {
         System.out.println("Type of language: " + name);
     }
