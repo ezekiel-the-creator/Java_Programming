@@ -20,3 +20,5 @@ public class Person {
         return age;
     }
 }
+
+//Encapsulation refers to bundling of fields and methods inside a single class as shown above.
