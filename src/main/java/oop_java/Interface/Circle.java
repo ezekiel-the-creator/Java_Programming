@@ -1,8 +1,11 @@
 package oop_java.Interface;
 
-public class Circle implements Shape {
+public class Circle implements Shape, Language {
     private double radius;
 
+    public void getName(String name) {
+        System.out.println("Type of language: " + name);
+    }
     public Circle(double radius){
         this.radius = radius;
     }
