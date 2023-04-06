@@ -28,15 +28,17 @@ Java can be used for a wide range of applications, including desktop, web, and m
 Each Java language construct has its own unique syntax that specifies how it is written and used in java program.By following the correct syntax for each costruct, we can ensure that our java programs are correct and functional.
 
 #### ***Class definition Syntax***
+##### A class is declared using the `class` keyword followed by the name of the class, and then the body enclosed in curly braces. 
 ```java
-public class Car {
-  String make;
-  String model;
-  int year;
-  
-  public Car(String make, String model, int year) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-  } 
-}
+public class Myclass {
+  //body of the class
+}```
+The class body is where the properties and behaviour of a class is defined.
+
+#### ***Variable declaration syntax***
+##### The syntax for defining properties in a class is to declare variables inside the class body using access modifier such as public or private followed by a variable type and name. Here is an example:
+
+```java
+public class Myclass {
+  public int x; //variable x declared with access modifier public
+  private String name; //Property name declared with access modifier private and data type String
