@@ -5,3 +5,4 @@ public class Circle extends Polygon{
         System.out.println("Rendering a circle");
     }   
 }
+//print() method is also an example of polymorphism. It is used to print values of diff types.
