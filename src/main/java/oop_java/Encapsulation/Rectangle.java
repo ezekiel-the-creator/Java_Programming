@@ -1,13 +1,13 @@
 package oop_java.Encapsulation;
 
-public class Area {
+public class Rectangle {
     //fields to calculate area
     int length;
     int width;
 
-    Area(int length, int breadth) {
+    Rectangle(int length, int breadth) {
         this.length = length;
-        this.width = width;
+        this.width = width;E
     }
 
     //method to calculate area

@@ -36,7 +36,7 @@ public class Calculator{
                 System.out.println("Unknown operand");
                 return;
             }
-            System.out.println(a + " " + operand +" " +  b + "  =  "  + result);
+            System.out.println(a + " " + String.valueOf(operand) +" " +  b + "  =  "  + result);
 		}
 	}
 }	
