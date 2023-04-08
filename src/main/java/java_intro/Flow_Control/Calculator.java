@@ -14,7 +14,7 @@ public class Calculator{
 			int operand = input.next().charAt(0);
 
             int result;
-            
+
             switch(operand){
                 case '+' :
                 result = a + b;
@@ -34,8 +34,8 @@ public class Calculator{
                 
                 default :
                 System.out.println("Unknown operand");
+                return;
             }
 		}
-        System.out.println(a + " " + operand +" " +  b + "  =  "  + result);
 	}
 }	
