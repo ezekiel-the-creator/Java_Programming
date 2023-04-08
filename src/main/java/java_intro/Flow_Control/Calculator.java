@@ -7,6 +7,7 @@ public class Calculator{
 		int a;
 		int b;
 		char operand;
+        int result;
 		
 		
 		try(Scanner input = new Scanner(System.in)){
@@ -17,7 +18,6 @@ public class Calculator{
 			System.out.println("Enter the operator; +, -, *, /: ");
 			operand = input.next().charAt(0);
 
-            int result;
 		
             switch(operand){
                 case '+' :
@@ -40,5 +40,6 @@ public class Calculator{
                 System.out.println("Unknown operand");
             }
 		}
+        System.out.println(a + " " + operand +" " +  b + "  =  "  + result);
 	}
 }	
