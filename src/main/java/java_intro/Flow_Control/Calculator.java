@@ -16,28 +16,29 @@ public class Calculator{
 			b = input.nextInt();
 			System.out.println("Enter the operator; +, -, *, /: ");
 			operand = input.next().charAt(0);
-		
-		switch(operand){
-			case '+' :
-			result = a + b;
-			break;
-			
-			case '-' :
-			result = a - b;
-			break;
-			
-			case '*':
-			result = a * b;
-			break;
-			
-			case '/':
-			result = a / b;
-			break;
-			
-			default :
-			System.out.println("Unknown operand");
 
+            int result;
+		
+            switch(operand){
+                case '+' :
+                result = a + b;
+                break;
+                
+                case '-' :
+                result = a - b;
+                break;
+                
+                case '*':
+                result = a * b;
+                break;
+                
+                case '/':
+                result = a / b;
+                break;
+                
+                default :
+                System.out.println("Unknown operand");
+            }
 		}
-		System.out.println(a + " " + operand +" " +  b + "  =  "  + result);
 	}
 }	
