@@ -46,6 +46,7 @@ public class strings {
         System.out.println(s4.equalsIgnoreCase(s5));
         System.out.println(s4.equals(s5));
         System.out.println(s4.startsWith("ez"));
+        System.out.println(s5.length());
     }
 
     private static void contains(){
