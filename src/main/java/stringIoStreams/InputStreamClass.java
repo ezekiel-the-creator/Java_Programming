@@ -3,7 +3,7 @@ package stringIoStreams;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
-class Main {
+class InputStreamClass {
     public static void main(String... args){
         byte[] array = new byte[100];
 
