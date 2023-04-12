@@ -13,6 +13,11 @@ public class FlushMethod {
         try {
             out = new FileOutputStream("flush.txt");
             out.write(data.getBytes());
+
+            out.flush();
+            out.close();
+        }catch (Exception e) {
+            e.getStackTrace();
         }
     }
 }
