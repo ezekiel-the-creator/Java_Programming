@@ -16,6 +16,8 @@ public class SkipMethod {
                 i = input.read();
             }
             input.close();
+        } catch (Exception e){
+            e.getStackTrace();
         }
     }
 }
