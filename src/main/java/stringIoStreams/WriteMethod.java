@@ -9,6 +9,11 @@ public class WriteMethod {
             FileOutputStream output = new FileOutputStream("Output.txt");
 
             byte[] array = data.getBytes();
+
+            output.write(array);
+            output.close();
+        } catch (Exception e){
+            e.getStackTrace();
         }
     }
 }
