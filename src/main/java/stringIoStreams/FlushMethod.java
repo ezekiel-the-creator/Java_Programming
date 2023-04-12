@@ -7,6 +7,11 @@ import java.io.IOException;
 
 public class FlushMethod {
     public static void main(String... args) throws IOException{
-        
+        FileOutputStream out = null;
+        String data = "This is the demo of flush method";
+
+        try {
+            out = new FileOutputStream("flush.txt");
+        }
     }
 }
