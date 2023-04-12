@@ -12,6 +12,10 @@ public class AvailableMethod {
             input.read();
             input.read();
             input.read();
+
+            System.out.println("Available bytes after reading: " + input.available());
+        } catch (Exception e){
+            e.getStackTrace();
         }
     }
 }
