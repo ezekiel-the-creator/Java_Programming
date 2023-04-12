@@ -1,0 +1,1 @@
+//flush () method is used to clear the output stream, it forces the output stream to write all data to the destionation
