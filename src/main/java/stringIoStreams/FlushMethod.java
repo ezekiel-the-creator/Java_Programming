@@ -12,6 +12,7 @@ public class FlushMethod {
 
         try {
             out = new FileOutputStream("flush.txt");
+            out.write(data.getBytes());
         }
     }
 }
