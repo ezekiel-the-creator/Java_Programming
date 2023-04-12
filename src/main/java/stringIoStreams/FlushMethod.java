@@ -4,3 +4,9 @@ package stringIoStreams;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+
+public class FlushMethod {
+    public static void main(String... args) throws IOException{
+        
+    }
+}
