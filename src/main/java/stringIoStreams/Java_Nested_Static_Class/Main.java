@@ -9,6 +9,6 @@ public class Main {
     //creating object of the static nested class
     Animal.Mammal mammal = new Animal.Mammal();
     reptile.displayInfo();
-    
+    mammal.displayInfo();
     }
 }
