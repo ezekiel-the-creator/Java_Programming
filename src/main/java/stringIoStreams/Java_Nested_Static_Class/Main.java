@@ -12,3 +12,6 @@ public class Main {
     mammal.displayInfo();
     }
 }
+
+
+//Static nested classes can only access static fields and methods of the Top-level class.
