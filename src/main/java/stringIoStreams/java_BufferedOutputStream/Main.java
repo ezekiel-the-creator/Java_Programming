@@ -13,6 +13,9 @@ public class Main {
 
             byte[] array = data.getBytes();
             output.close();
+
+            output.write(array);
+            output.close();
         } catch(Exception e){
             e.getStackTrace();
         }
