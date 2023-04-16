@@ -15,7 +15,11 @@ public class Main {
 
             while (i != -1) {
                 System.out.print((char) i);
+                i = input.read();
             }
+            input.close();
+        } catch (Exception e){
+            e.getStackTrace();
         }
       }
 }
