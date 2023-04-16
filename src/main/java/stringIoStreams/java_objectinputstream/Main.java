@@ -7,11 +7,11 @@ import java.io.ObjectOutputStream;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
 
         int data1 = 5;
         String data2 = "This is programiz";
-        Dog dog = new Dog("Tyler", "Labrador")
+        Dog dog = new Dog("Tyler", "Labrador");
 
         try {
             FileOutputStream file = new FileOutputStream("file.txt");
@@ -20,16 +20,19 @@ public class Main {
             // Writing to the file using ObjectOutputStream
             output.writeInt(data1);
             output.writeObject(data2);
+            output.writeObject(dog);
 
             FileInputStream fileStream = new FileInputStream("file.txt");
             // Creating an object input stream
             ObjectInputStream objStream = new ObjectInputStream(fileStream);
+            ObjectInputStream input = new ObjectInputStream(fileStream);
 
-            //Using the readInt() method
-            System.out.println("Integer data :" + objStream.readInt());
+            Dog newDog = (Dog) input.readObject();
 
             // Using the readObject() method
             System.out.println("String data: " + objStream.readObject());
+            System.out.println("Dog Name: " + newDog.name);
+            System.out.println("Dog breed: " + newDog.breed);
 
             output.close();
             objStream.close();
