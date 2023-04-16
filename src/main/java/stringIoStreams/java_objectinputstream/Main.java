@@ -11,6 +11,7 @@ public class Main {
 
         int data1 = 5;
         String data2 = "This is programiz";
+        Dog dog = new Dog("Tyler", "Labrador")
 
         try {
             FileOutputStream file = new FileOutputStream("file.txt");
