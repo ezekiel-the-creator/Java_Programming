@@ -11,7 +11,10 @@ public class Main {
             FileOutputStream file = new FileOutputStream("output.txt");
             BufferedOutputStream output = new BufferedOutputStream(file);
 
-            
+            byte[] array = data.getBytes();
+            output.close();
+        } catch(Exception e){
+            e.getStackTrace();
         }
     }
 }
