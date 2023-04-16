@@ -1,1 +1,1 @@
-This is java.
+This is a text inside the file
