@@ -11,7 +11,11 @@ public class Main {
             FileInputStream file = new FileInputStream("java.txt");
             BufferedInputStream input = new BufferedInputStream(file);
 
-            
+            int i = input.read();
+
+            while (i != -1) {
+                System.out.print((char) i);
+            }
         }
       }
 }
