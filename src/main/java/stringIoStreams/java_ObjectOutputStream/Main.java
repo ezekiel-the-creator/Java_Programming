@@ -22,10 +22,13 @@ public class Main {
             // writes objects to output stream
             output.writeInt(data1);
             output.writeObject(data2);
+            output.writeObject(dog);
 
             // Reads data using the ObjectInputStream
             FileInputStream fileStream = new FileInputStream("file.txt");
             ObjectInputStream objStream = new ObjectInputStream(fileStream);
+
+            Dog newDog = (Dog) objStream.readObject();
 
             System.out.println("Integer data :" + objStream.readInt());
             System.out.println("String data: " + objStream.readObject());
