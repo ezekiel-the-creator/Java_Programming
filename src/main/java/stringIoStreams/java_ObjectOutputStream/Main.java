@@ -10,6 +10,7 @@ public class Main {
 
         int data1 = 5;
         String data2 = "This is programiz";
+        Dog dog = new Dog("Tom", "Labrador");
 
         try {
 
