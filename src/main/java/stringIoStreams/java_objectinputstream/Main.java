@@ -36,6 +36,7 @@ public class Main {
 
             output.close();
             objStream.close();
+            input.close();
         }
         catch (Exception e) {
             e.getStackTrace();
