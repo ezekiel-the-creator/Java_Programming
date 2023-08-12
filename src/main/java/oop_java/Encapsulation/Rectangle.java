@@ -7,7 +7,7 @@ public class Rectangle {
 
     Rectangle(int length, int breadth) {
         this.length = length;
-        this.width = width;E
+        this.width = width;
     }
 
     //method to calculate area
