@@ -6,28 +6,6 @@ public class Strings {
 
         equals();
         contains();
-        startsEndsWith();
-        length();
-        indexOf();
-        substring();
-        concat();
-        join();
-        compareTo();
-        matches();
-        format();
-        replace();
-        toLowerCase();
-        toUpperCase();
-        split();
-        isEmpty();
-        valueOf();
-        repeat();
-        isBlank();
-        strip();
-        lines();
-
-        //String utils
-        trim();
     }
 
     private static void equals() {
