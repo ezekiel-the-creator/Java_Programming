@@ -46,3 +46,52 @@ public class Myclass {
   private String name; //Property name declared with access modifier private and data type String
 }
 ```
+# **Java Collection Interfac**
+
+The `Collection` interface is the root interface of the java collection framework.The `collection` interface is implementain indirectly by the `List`, `Queue` and `Set` subinterfaces. The `arraylist`, `linkedlist` classes implement the `list` interface which is a sub-interface of the `collection` interface.
+
+#### ***Methods of the collection interface***
+
+* add()
+* size()
+* remove()
+* addAll()
+* removeAll()
+* clear()
+* iterator()
+
+*** Java List ***
+Elements are stored and accessed sequentially. It extends the collection interace. Classes that Implement the functionalities of the `list` interface are:
+
+* ArrayList
+* LinkedList
+* Vector
+* Stack
+
+*We must import `java.util.List` package inorder to use list
+
+```java
+//ArrayList Implementation of List
+List<String> items = new ArrayList<>();
+
+//LinkedList Implementation of list
+List<String> numbers = new LinkedList<>();
+```
+
+**Methods of the list Interface**
+
+* add()
+* addAll()
+* get()
+* iterator()
+* set()
+* remove()
+* removeAll()
+* clear()
+* size()
+* toArray()
+* contains()
+
+**Java List vs Set**
+* List can include duplicate elements. However, sets cannot have duplicate elements.
+* Elements in list are sorted in some order. Elements in sets are stored in groups like a set in mathedmatics.
