@@ -8,6 +8,7 @@ class JVector {
         mammals.add("Dog");
         mammals.add("Horse");
         mammals.add("Cat");
+        mammals.add("Man");
         System.out.println("Vector: " + mammals);
 
         //using addAll()
