@@ -46,9 +46,9 @@ public class Myclass {
   private String name; //Property name declared with access modifier private and data type String
 }
 ```
-# **Java Collection Interfac**
+# **Java Collection Interface**
 
-The `Collection` interface is the root interface of the java collection framework.The `collection` interface is implementain indirectly by the `List`, `Queue` and `Set` subinterfaces. The `arraylist`, `linkedlist` classes implement the `list` interface which is a sub-interface of the `collection` interface.
+The `Collection` interface is the root interface of the java collection framework.The `collection` interface is implemented in indirectly by the `List`, `Queue` and `Set` subinterfaces. The `arraylist`, `linkedlist` classes implement the `list` interface which is a sub-interface of the `collection` interface.
 
 #### ***Methods of the collection interface***
 
