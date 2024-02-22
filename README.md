@@ -95,3 +95,15 @@ List<String> numbers = new LinkedList<>();
 **Java List vs Set**
 * List can include duplicate elements. However, sets cannot have duplicate elements.
 * Elements in list are sorted in some order. Elements in sets are stored in groups like a set in mathedmatics.
+
+**String processing**
+
+### **Methods of the String Class**
+
+### ***String analysis***
+* Length.()
+* isEmpty()
+* indexOf()
+* lastIndexOf()
+* matches()
+
