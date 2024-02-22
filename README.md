@@ -107,3 +107,9 @@ List<String> numbers = new LinkedList<>();
 * lastIndexOf()
 * matches()
 
+### ***String comparison***
+
+* equals()
+* equalsIgnoreCase()
+* contentEquals()
+* contains()
