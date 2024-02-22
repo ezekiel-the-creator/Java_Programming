@@ -113,3 +113,7 @@ List<String> numbers = new LinkedList<>();
 * equalsIgnoreCase()
 * contentEquals()
 * contains()
+* startsWith()
+* endsWith()
+* compareTo()
+* compareToIgnoreCase()
