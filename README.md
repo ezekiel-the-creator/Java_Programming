@@ -117,3 +117,5 @@ List<String> numbers = new LinkedList<>();
 * endsWith()
 * compareTo()
 * compareToIgnoreCase()
+
+### ***String transformation***
