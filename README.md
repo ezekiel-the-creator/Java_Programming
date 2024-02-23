@@ -127,4 +127,5 @@ List<String> numbers = new LinkedList<>();
 * replaceFirst()
 * replaceAll()
 * toLowerCase()
+* toUpperCAse()
 
