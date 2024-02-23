@@ -126,4 +126,5 @@ List<String> numbers = new LinkedList<>();
 * replace()
 * replaceFirst()
 * replaceAll()
+* toLowerCase()
 
