@@ -129,4 +129,5 @@ List<String> numbers = new LinkedList<>();
 * toLowerCase()
 * toUpperCAse()
 * split()
+* valueOf()
 
