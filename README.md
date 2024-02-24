@@ -119,15 +119,15 @@ List<String> numbers = new LinkedList<>();
 * compareToIgnoreCase()
 
 ### ***String transformation***
-* substring()
-* format()
-* concat()
+* substring() - ***Returns the substring, starting with the specified index***
+* format() - ***Uses the passsed-in first argument as a template and inserts other arguments in the corresponding position of the template sequentially***
+* concat() - ***Works the same way as the arithmetic operator***
 * join()
 * replace()
 * replaceFirst()
 * replaceAll()
 * toLowerCase()
 * toUpperCAse()
-* split()
-* valueOf()
+* split() - ***Breaks down the string into substrings, using the provided character as delimiter***
+* valueOf() - ***Transforms the values of primitive types to a string type***
 
