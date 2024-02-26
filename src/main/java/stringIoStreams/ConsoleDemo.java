@@ -27,5 +27,14 @@ public class ConsoleDemo {
         System.out.println("Entered 2: " + line);
         line = console.readLine("Enter some%s", "thing 3 ");
         System.out.println("Entered 3: " + line);
+
+        System.out.print("Enter password: ");
+        char[] password = console.readPassword();
+        System.out.println("Entered 4: " + new String(password));
+        password = console.readPassword("Enter password 5: ");
+        System.out.println("Entered 5 " + new String(password));
+        System.out.println("Entered 6: " + new String(password));
     }
+
+    private static void console3()
 }
