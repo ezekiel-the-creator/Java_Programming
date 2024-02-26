@@ -36,5 +36,13 @@ public class ConsoleDemo {
         System.out.println("Entered 6: " + new String(password));
     }
 
-    private static void console3()
+    private static void console3(){
+        System.out.println("\nconsole3:");
+        Console console = System.console();
+
+        try (Reader reader = console.reader()){
+            char[] chars = new char[10];
+            System.out.print("Entered: " + new String(chars));
+        }
+    }
 }
