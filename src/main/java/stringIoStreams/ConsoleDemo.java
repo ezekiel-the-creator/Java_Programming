@@ -42,7 +42,9 @@ public class ConsoleDemo {
 
         try (Reader reader = console.reader()){
             char[] chars = new char[10];
-            System.out.print("Entered: " + new String(chars));
+            System.out.print("Enter something: ");
+            reader.read(chars);
+
         }
     }
 }
