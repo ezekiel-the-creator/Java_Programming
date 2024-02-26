@@ -44,7 +44,13 @@ public class ConsoleDemo {
             char[] chars = new char[10];
             System.out.print("Enter something: ");
             reader.read(chars);
-
+            System.out.print("Entered: " + new String(chars));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        PrintWriter out = console.writer();
+        out.println("Hello!");
+
+        console.flush();
     }
 }
