@@ -8,6 +8,7 @@ import java.io.Reader;
 public class ConsoleDemo {
     public static void main(String... args){
         console();
+        console2();
     }
 
     private static void console(){
