@@ -9,6 +9,7 @@ public class ConsoleDemo {
     public static void main(String... args){
         console();
         console2();
+        console3();
     }
 
     private static void console(){
