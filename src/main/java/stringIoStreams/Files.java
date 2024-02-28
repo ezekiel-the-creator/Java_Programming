@@ -21,4 +21,13 @@ public class Files {
             e.printStackTrace();
         }
     }
+
+    private static void createFile2() {
+        String path = "demo1" + File.separator + "demo2" + File.separator;
+        String fileName = "FileName.txt";
+        File f = new File(path + fileName);
+        f = new File(path, fileName);
+        f = new File(new File(path), fileName);
+        URI uri = new File(path + fileName).toURI();
+    }
 }
