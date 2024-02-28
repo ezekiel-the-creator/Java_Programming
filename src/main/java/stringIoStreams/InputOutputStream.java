@@ -302,4 +302,34 @@ public class InputOutputStream {
         System.out.printf("Hi, %s!%n", "dear reader");
         System.out.format("Hi, %s!%n", "dear reader");
     }
+
+    private static void streamTokenizer(){
+        System.out.println("\nstreamtokenizer():");
+        String file = classLoader.getResource("tokens.txt").getFile();
+        try(FileReader fr = new FileReader(file);
+            BufferedReader br = new BufferedReader(fr)){
+            StreamTokenizer st = new StreamTokenizer(fr);
+            st.eolIsSignificant(true);
+            st.commentChar('e');
+            System.out.println("Line " + st.lineno() + ":");
+            int i;
+            while ((i = st.nextToken()) != StreamTokenizer.TT_EOF) {
+                switch (i) {
+                    case StreamTokenizer.TT_EOF:
+                        System.out.println("\nLine " + st.lineno() + ":");
+                        break;
+                    case StreamTokenizer.TT_WORD:
+                        System.out.println("TT_WORD => " + st.sval);
+                        break;
+                    case StreamTokenizer.TT_NUMBER:
+                        System.out.println("TT_NUMBER => " + st.nval);
+                        break;
+                    default:
+                        System.out.println("Unexpected => " + st.ttype);
+                }
+            }
+            }catch (Exception ex){
+                ex.printStackTrace();
+            }
+    }
 }
