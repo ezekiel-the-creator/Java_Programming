@@ -29,5 +29,17 @@ public class Files {
         f = new File(path, fileName);
         f = new File(new File(path), fileName);
         URI uri = new File(path + fileName).toURI();
+        f = new File(uri);
+        try {
+            new File(path).mkdirs();
+            f.createNewFile();
+            f.delete();
+            path = StringUtils.substringBeforeLast(path, File.separator);
+            while (new File(path).delete()) {
+                path = StringUtils.substringBeforeLast(path, File.separator);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
