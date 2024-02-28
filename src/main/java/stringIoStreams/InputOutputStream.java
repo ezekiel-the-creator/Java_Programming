@@ -279,4 +279,14 @@ public class InputOutputStream {
                 ex.printStackTrace();
             }
     }
+
+    private static void printStream2() {
+        System.out.println("\nprintStream2():");
+        String fileName = "output.txt";
+        try (PrintStream ps = new PrintStream(fileName)){
+            ps.println("Hi there!");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
 }
