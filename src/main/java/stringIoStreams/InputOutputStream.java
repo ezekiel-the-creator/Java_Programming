@@ -303,6 +303,12 @@ public class InputOutputStream {
         System.out.format("Hi, %s!%n", "dear reader");
     }
 
+    private static void printStream5() {
+        System.out.println("\nprintStream5():");
+        System.out.printf("Hi %s", "there").append("!\n");
+        System.out.printf("Hi ").append("one there!\n two", 4, 11);
+    }
+
     private static void streamTokenizer(){
         System.out.println("\nstreamtokenizer():");
         String file = classLoader.getResource("tokens.txt").getFile();
