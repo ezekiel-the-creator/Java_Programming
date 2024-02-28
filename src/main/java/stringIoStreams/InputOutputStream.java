@@ -373,7 +373,14 @@ public class InputOutputStream {
         }
     }
 
-    
+    private static void scanner4() {
+        System.out.println("\nscanner4():\n");
+        String input = "Space Trip II";
+        Scanner sc = new Scanner(input).useDelimiter(",");
+        while(sc.hasNext()){
+            System.out.println(sc.next());
+        }
+    }
 
     private static void pauseMs (long ms) {
         try {
