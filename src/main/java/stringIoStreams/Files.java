@@ -76,6 +76,11 @@ public class Files {
             for(File f: File.listRoots()){
                 System.out.print(f + " ");
             }
+            System.out.println();
+            System.out.println();
+            f1.delete();
+            f2.delete();
+            path = StringUtils.substringBeforeLast(path, File.separator);
         }
     }
 }
