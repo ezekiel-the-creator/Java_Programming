@@ -60,6 +60,11 @@ public class Files {
             for(String d: dir1.list()){
                 System.out.print(d + " ");
             }
+            System.out.print("\ndir1.listFiles(): ");
+            for (File f: dir1.listFiles()){
+                System.out.print(f + " ");
+            }
+            
         }
     }
 }
