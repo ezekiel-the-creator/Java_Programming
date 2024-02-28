@@ -225,7 +225,7 @@ public class InputOutputStream {
         }
     }
 
-    private static void pipedInputOUtputStream4() {
+    private static void pipedInputOutputStream4() {
         System.out.println("\npipedInputOutputStream4():");
         PipedOutputStream pos = new PipedOutputStream();
         PipedInputStream pis = new PipedInputStream();
