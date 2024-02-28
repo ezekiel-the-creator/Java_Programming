@@ -338,4 +338,12 @@ public class InputOutputStream {
                 ex.printStackTrace();
             }
     }
+
+    private static void pauseMs (long ms) {
+        try {
+            TimeUnit.MILLISECONDS.sleep(ms);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
