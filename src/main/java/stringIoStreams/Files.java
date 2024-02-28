@@ -72,7 +72,10 @@ public class Files {
             for(File f: dir.listFiles()){
                 System.out.print(f + " ");
             }
-            
+            System.out.print("\nFile.listRoots(): ");
+            for(File f: File.listRoots()){
+                System.out.print(f + " ");
+            }
         }
     }
 }
