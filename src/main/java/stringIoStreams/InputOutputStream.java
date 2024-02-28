@@ -107,7 +107,7 @@ public class InputOutputStream {
         }
     }
 
-    private static void fileInputstream2() {
+    private static void fileInputStream2() {
         System.out.println("\nfileInputStream2():");
         String file = classLoader.getResource("hello.txt").getFile();
         try(FileInputStream fis = new FileInputStream(file)){
