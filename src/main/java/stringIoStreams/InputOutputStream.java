@@ -68,7 +68,7 @@ public class InputOutputStream {
     }
 
     private static void byteArrayInputStream2() {
-        System.out.println("\byteArrayInputStream2():");
+        System.out.println("\nbyteArrayInputStream2():");
         byte[] buffer = bytesSource();
         try(ByteArrayInputStream bais = new ByteArrayInputStream(buffer)){
             int data;
