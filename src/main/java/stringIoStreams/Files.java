@@ -81,6 +81,9 @@ public class Files {
             f1.delete();
             f2.delete();
             path = StringUtils.substringBeforeLast(path, File.separator);
+            while (new File(path).delete()){
+                path = StringUtils.substringBeforeLast(path, File.separator);
+            }
         }
     }
 }
