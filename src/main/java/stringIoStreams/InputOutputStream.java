@@ -339,6 +339,42 @@ public class InputOutputStream {
             }
     }
 
+    private static void scanner1() {
+        System.out.println("\nScanner1():");
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Enter something: ");
+        while(sc.hasNext()){
+            String line = sc.nextLine();
+            if("end".equals(line)){
+                System.exit(0);
+            }
+            System.out.println(line);
+        }
+    }
+
+    private static void scanner2() {
+        System.out.println("\nscanner2():\n");
+        String file = classLoader.getResource("tokens.txt").getFile();
+        try(Scanner sc = new Scanner(new File(file))){
+            while(sc.hasNextLine()){
+                System.out.println(sc.nextLine());
+            }
+        } catch (Exception ex){
+            ex.printStackTrace();
+        }
+    }
+
+    private static void scanner3() {
+        System.out.println("\nscanner3():\n");
+        String input = "One two three";
+        Scanner sc = new Scanner (input);
+        while(sc.hasNext()){
+            System.out.println(sc.next());
+        }
+    }
+
+    
+
     private static void pauseMs (long ms) {
         try {
             TimeUnit.MILLISECONDS.sleep(ms);
