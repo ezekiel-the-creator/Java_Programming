@@ -289,4 +289,13 @@ public class InputOutputStream {
             ex.printStackTrace();
         }
     }
+
+    private static void printStream3() {
+        System.out.println("\nprintStream3():");
+        for (String chs : Charset.availableCharsets().keySet()) {
+            System.out.println(chs);
+        }
+    }
+
+    
 }
