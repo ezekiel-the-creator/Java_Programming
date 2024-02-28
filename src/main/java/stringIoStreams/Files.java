@@ -84,6 +84,8 @@ public class Files {
             while (new File(path).delete()){
                 path = StringUtils.substringBeforeLast(path, File.separator);
             }
+        }catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
