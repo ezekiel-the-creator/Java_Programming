@@ -136,6 +136,7 @@ public class InputOutputStream {
         private int field1 = 42;
         private String field2 = "abc";
     }
+
     private static void objectInputOutputStream() {
         
         System.out.println("\nobjectInputOutputStream():");
@@ -165,4 +166,108 @@ public class InputOutputStream {
             ex.printStackTrace();
         }
     }
+
+    private static void pipedInputOutputStream1() throws Exception {
+        System.out.println("\npipedInputOutputStream1():");
+        PipedInputStream pis = new PipedInputStream();
+        PipedOutputStream pos = new PipedOutputStream(pis);
+    }
+
+    private static void pipedInputOutputStream2() throws Exception {
+        System.out.println("\npipedInputOutputStream2():");
+        PipedOutputStream pos = new PipedOutputStream();
+        PipedInputStream pis = new PipedInputStream(pos);
+    }
+
+    private static void pipedInputOutputStream3() throws Exception {
+        System.out.println("\npipedInputOutputStream3():");
+        PipedInputStream pis = new PipedInputStream();
+        PipedOutputStream pos = new PipedOutputStream();
+        pos.connect(pis);
+    }
+
+    private static class PipedOutputWorker implements Runnable{
+        private PipedOutputStream pos;
+
+        public PipedOutputWorker(PipedOutputStream pos) {
+            this.pos = pos;
+        }
+
+        @Override
+        public void run() {
+            try {
+                for(int i = 1; i < 4; i++) {
+                    pos.write(i);
+                }
+                pos.close();
+            } catch (Exception ex) {ex.printStackTrace();}
+        }
+    }
+
+    private static class PipedInputWorker implements Runnable{
+        private PipedInputStream pis;
+
+        public PipedInputWorker(PipedInputStream pis) {
+            this.pis = pis;
+        }
+
+        @Override
+        public void run() {
+            try {
+                int i;
+                while((i = pis.read()) > -1){
+                    System.out.print(i + " ");
+                }
+                pis.close();
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
+    private static void pipedInputOUtputStream4() {
+        System.out.println("\npipedInputOutputStream4():");
+        PipedOutputStream pos = new PipedOutputStream();
+        PipedInputStream pis = new PipedInputStream();
+        try {
+            pos.connect(pis);
+            new Thread(new PipedOutputWorker(pos)).start();
+            new Thread(new PipedInputWorker(pis)).start();
+            TimeUnit.MILLISECONDS.sleep(500);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    private static void sequenceInputStream() {
+        System.out.println("\nsequenceInputStream():");
+        String file1 = classLoader.getResource("hello.txt").getFile();
+        String file2 = classLoader.getResource("howAreYou.txt").getFile();
+        try(FileInputStream fis1 = new FileInputStream(file1);
+            FileInputStream fis2 = new FileInputStream(file2);
+            SequenceInputStream sis = new SequenceInputStream(fis1, fis2)){
+                int i;
+                while((i = sis.read()) > -1){
+                    System.out.print((char)i);
+                }
+            }catch (Exception ex) {
+                ex.printStackTrace();
+            }
+    }
+
+    private static void filterInputStream() {
+        System.out.println("\nfilterInputStream():");
+        String file = classLoader.getResource("hello.txt").getFile();
+        try(FileInputStream fis = new FileInputStream(file);
+            FilterInputStream filter = new BufferedInputStream(fis)){
+                int i;
+                while((i = filter.read()) > -1){
+                    System.out.print((char)i);
+                }
+            }catch (Exception ex) {
+                ex.printStackTrace();
+            }
+    }
+
+    
 }
