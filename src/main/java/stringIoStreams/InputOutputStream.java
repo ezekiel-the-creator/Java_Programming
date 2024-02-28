@@ -297,5 +297,9 @@ public class InputOutputStream {
         }
     }
 
-    
+    private static void printStream4() {
+        System.out.println("\nprintStream4():");
+        System.out.printf("Hi, %s!%n", "dear reader");
+        System.out.format("Hi, %s!%n", "dear reader");
+    }
 }
