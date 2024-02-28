@@ -269,5 +269,14 @@ public class InputOutputStream {
             }
     }
 
-    
+    private static void printStream1() {
+        System.out.println("\nprintStream1():");
+        String fileName = "output.txt";
+        try(FileOutputStream fos = new FileOutputStream(fileName);
+            PrintStream ps = new PrintStream(fos)){
+                ps.println("Hi there!");
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+    }
 }
