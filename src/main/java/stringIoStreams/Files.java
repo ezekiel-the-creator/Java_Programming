@@ -12,5 +12,13 @@ public class Files {
         list1();
     }
 
-    
+    private static void createFile1() {
+        File f = new File("NameOnly.txt");
+        try {
+            f.createNewFile();
+            f.delete();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 }
