@@ -12,6 +12,11 @@ public class ReaderWriter {
     private static void bufferedReader() {
         System.out.println("\nBufferedReader():");
         InputStream inputStream  = InputOutputStream.class.getResourceAsStream("/hello.txt");
-        try()
+        try(BufferedReader br = new BufferedReader(new InuptStreamReader(inputStream))){
+            String line;
+            while((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+        }
     }
 }
