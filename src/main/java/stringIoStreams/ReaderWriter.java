@@ -9,5 +9,9 @@ public class ReaderWriter {
         bufferedReader();
     }
 
-    priv
+    private static void bufferedReader() {
+        System.out.println("\nBufferedReader():");
+        InputStream inputStream  = InputOutputStream.class.getResourceAsStream("/hello.txt");
+        try()
+    }
 }
