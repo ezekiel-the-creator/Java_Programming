@@ -17,6 +17,8 @@ public class ReaderWriter {
             while((line = br.readLine()) != null) {
                 System.out.println(line);
             }
+        } catch (Exception ex){
+            ex.printStackTrace();
         }
     }
 }
