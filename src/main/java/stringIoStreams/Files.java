@@ -46,6 +46,7 @@ public class Files {
     private static void list1() {
         String path1 = "demo1" + File.separator;
         String path2 = "demo2" + File.separator;
+        String path = path1 + path2;
         File f1 = new File(path + "file1.txt");
         File f2 = new File(path + "file2.txt");
         File dir1 = new File(path1);
