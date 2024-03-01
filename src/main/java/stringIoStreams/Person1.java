@@ -1,5 +1,7 @@
 package stringIoStreams;
 
-public class Person1 {
-    
+import java.io.Serializable;
+
+public class Person1 implements Serializable {
+    private int age;
 }
