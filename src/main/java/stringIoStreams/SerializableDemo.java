@@ -15,7 +15,7 @@ public class SerializableDemo {
         printInfo(osc3);
     }
 
-    private static printInfo(ObjectStreamClass osc) {
+    private static void printInfo(ObjectStreamClass osc) {
         System.out.println(osc.forClass());
         System.out.println("Class name: " + osc.getName());
         System.out.println("SerialVersionUID: " + osc.getSerialVersionUID());
