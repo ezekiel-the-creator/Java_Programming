@@ -14,4 +14,18 @@ public class SerializableDemo {
         ObjectStreamClass osc3 = ObjectStreamClass.lookupAny(Person2.class);
         printInfo(osc3);
     }
+
+    private static printInfo(objectStreamClass osc) {
+        System.out.println(osc.forClass());
+        System.out.println("Class name: " + osc.getName());
+        System.out.println("SerialVersionUID: " + osc.getSerialVersionUID());
+        ObjectStreamField[] fields = osc.getFields();
+        system.out.println("Serialized fields:");
+        for (ObjectStreamField osf : fields) {
+            System.out.println(osf.getName() + ": ");
+            System.out.println("\t" + osf.getType());
+            System.out.println("\t" + osf.getTypeCode());
+            
+        }
+    }
 }
