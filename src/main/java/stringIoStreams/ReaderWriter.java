@@ -2,7 +2,7 @@ package stringIoStreams;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
-import java.io.inputStreamReader;
+import java.io.InputStreamReader;
 
 public class ReaderWriter {
     public static void main(String... args) throws Exception {
@@ -12,7 +12,7 @@ public class ReaderWriter {
     private static void bufferedReader() {
         System.out.println("\nBufferedReader():");
         InputStream inputStream  = InputOutputStream.class.getResourceAsStream("/hello.txt");
-        try(BufferedReader br = new BufferedReader(new InuptStreamReader(inputStream))){
+        try(BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
             String line;
             while((line = br.readLine()) != null) {
                 System.out.println(line);

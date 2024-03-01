@@ -18,4 +18,12 @@
       </plugin>
     </plugins>
   </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>clojurescript</artifactId>
+      <version>1.10.520</version>
+    </dependency>
+  </dependencies>
 </project>
