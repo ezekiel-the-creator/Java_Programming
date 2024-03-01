@@ -5,7 +5,7 @@ import java.io.ObjectStreamField;
 
 public class SerializableDemo {
     public static void main(String... args){
-        ObjectStreamClass osc1 = ObjectStreamClass.lookup(Person1.clas);
+        ObjectStreamClass osc1 = ObjectStreamClass.lookup(Person1.class);
         printInfo(osc1);
 
         ObjectStreamClass osc2 = ObjectStreamClass.lookup(Person2.class);
