@@ -95,5 +95,10 @@ public class String {
         String s8 = "xyz";
         String newStr1 = s7.concat(s8);
         System.out.println(newStr1);
+
+        String newStr2 = s7 + s8;
+        System.out.println(newStr2);
     }
+
+
 }
