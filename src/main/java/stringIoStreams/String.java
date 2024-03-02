@@ -40,6 +40,15 @@ public class String {
         System.out.println("abc".equals(s2));
         System.out.println("abc".equals(s3));
 
-        
+        System.out.println("\nString method equalsIgnoreCase():");
+        String s4 = "aBc";
+        String s5 = "Abc";
+        System.out.println(s4.equals(s5));
+        System.out.println(s4.equalsIgnoreCase(s5));
+
+        System.out.println("\nString method contentEquals():");
+        System.out.println(s1.contentEquals(s2));
+        System.out.println("abc".contentEquals(s2));
+
     }
 }
