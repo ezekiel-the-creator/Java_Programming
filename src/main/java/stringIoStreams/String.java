@@ -29,4 +29,17 @@ public class String {
         //stringUtils
         trim();
     }
+
+    private static void equals() {
+        System.out.println("\nString method equals():");
+        String s1 = "abc";
+        String s2 = "abc";
+        String s3 = "adc";
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.equals(s3));
+        System.out.println("abc".equals(s2));
+        System.out.println("abc".equals(s3));
+
+        
+    }
 }
