@@ -60,5 +60,33 @@ public class String {
         System.out.println(s6.contains(s7));
         System.out.println(s6.contains(s8));
     }
-    
+
+    private static void startsEndsWith(){
+        System.out.println("\nString methods startswith(), endWith():");
+        String s6 = "abc42t%";
+        String s7 = "42";
+        System.out.println(s6.startsWith(s7));
+        System.out.println(s6.startsWith("ab"));
+        System.out.println(s6.startsWith("42", 3));
+        System.out.println(s6.endsWith(s7));
+        System.out.println(s6.endsWith("t%"));
+    }
+
+    private static void length(){
+        System.out.println("\nString method length():");
+        String s7 = "42";
+        System.out.println(s7.length());
+        System.out.println("0 0".length());
+    }
+
+    private static void indexOf(){
+        System.out.println("\nString methods indexOf(), lastIndexOf():");
+        String s6 = "abc42t%";
+        String s7 = "42";
+        System.out.println(s6.indexOf(s7));
+        System.out.println(s6.indexOf("a"));
+        System.out.println(s6.indexOf("xyz"));
+        System.out.println("ababa".lastIndexOf("ba"));
+
+    }
 }
