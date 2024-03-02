@@ -51,4 +51,14 @@ public class String {
         System.out.println("abc".contentEquals(s2));
 
     }
+
+    private static void contains(){
+        System.out.println("\nString method contains():");
+        String s6 = "abc42t%";
+        String s7 = "42";
+        String s8 = "xyz";
+        System.out.println(s6.contains(s7));
+        System.out.println(s6.contains(s8));
+    }
+    
 }
