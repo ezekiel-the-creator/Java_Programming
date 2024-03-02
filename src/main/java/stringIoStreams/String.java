@@ -87,6 +87,13 @@ public class String {
         System.out.println(s6.indexOf("a"));
         System.out.println(s6.indexOf("xyz"));
         System.out.println("ababa".lastIndexOf("ba"));
+    }
 
+    private static void concat(){
+        Sytem.out.println("\nString method concat():");
+        String s7 = "42";
+        String s8 = "xyz";
+        String newStr1 = s7.concat(s8);
+        System.out.println(newStr1);
     }
 }
