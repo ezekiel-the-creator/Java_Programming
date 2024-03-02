@@ -100,5 +100,15 @@ public class String {
         System.out.println(newStr2);
     }
 
+    private static void join(){
+        System.out.println("\nString method join():");
+        String newStr1 = String.join(",", "abc", "xyz";
+        System.out.println(newStr1);
+
+        List<String> list = List.of("abc", "xyz");
+        String newStr2 = String.join(",", list);
+        System.out.println(newStr2);
+    }
+
 
 }
