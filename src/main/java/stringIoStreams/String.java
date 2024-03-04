@@ -182,6 +182,12 @@ public class String {
         System.out.println("'" + sp + "'");
         System.out.println("'" + sp.stripLeading() + "'");
         System.out.println("'" + sp.stripTrailing() + "'");
-        Syste.out.println("'" + sp.strip() + "'");
+        System.out.println("'" + sp.strip() + "'");
+    }
+
+    private static void lines(){
+        System.out.println("\nString method lines(): \n");
+        String line = "Line 1\nLine 2\rLine 3\r\nLine 4";
+        line.lines().forEach(System.out::println);
     }
 }
