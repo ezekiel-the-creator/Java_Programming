@@ -146,4 +146,12 @@ public class String {
         System.out.println("".isEmpty());
         System.out.println(" ".isEmpty());
     }
+
+    private static void split(){
+        System.out.println("\nString method split():");
+        String[] arr = "abcabc".split("b");
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
+    }
 }
