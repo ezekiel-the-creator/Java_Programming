@@ -175,4 +175,13 @@ public class String {
         System.out.println(" ".isBlank());
         System.out.println(" b ".isBlank());
     }
+
+    private static void strip(){
+        System.out.println("\nString method strip():");
+        String sp = "  abc  ";
+        System.out.println("'" + sp + "'");
+        System.out.println("'" + sp.stripLeading() + "'");
+        System.out.println("'" + sp.stripTrailing() + "'");
+        Syste.out.println("'" + sp.strip() + "'");
+    }
 }
