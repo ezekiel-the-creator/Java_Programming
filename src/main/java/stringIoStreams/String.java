@@ -168,4 +168,11 @@ public class String {
         System.out.println("ab".repeat(1));
         System.out.println("ab".repeat(0));
     }
+
+    private static void isBlank(){
+        System.out.println("\nString method isBlank():");
+        System.out.println("".isBlank());
+        System.out.println(" ".isBlank());
+        System.out.println(" b ".isBlank());
+    }
 }
