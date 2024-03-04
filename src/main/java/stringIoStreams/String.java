@@ -154,4 +154,13 @@ public class String {
         System.out.println(arr[1]);
         System.out.println(arr[2]);
     }
+
+    private static valueOf(){
+        System.out.println("\nString method valueOf():");
+        float f = 23.42f;
+        String sf = String.valueOf(f);
+        System.out.println(sf);
+    }
+
+    
 }
