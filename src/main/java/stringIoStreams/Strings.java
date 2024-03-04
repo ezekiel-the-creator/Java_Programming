@@ -1,4 +1,5 @@
 package stringIoStreams;
+import java.lang.String;
 
 public class Strings {
     public static void main(String... args){
