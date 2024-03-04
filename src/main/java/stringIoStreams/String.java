@@ -199,6 +199,17 @@ public class String {
         System.out.println("'" + StringUtils.trim("") + "'");
         System.out.println("'" + StringUtils.trim("   ") + "'");
 
-        
+        System.out.println("'" + StringUtils.trimToNull(" x ") + "'");
+        System.out.println(StringUtils.trimToNull(" x ") + "'");
+        System.out.println(StringUtils.trimToNull(""));
+        System.out.println(StringUtils.trimToNull("   "));
+
+        System.out.println("'" + StringUtils.trimToEmpty(" s ") + "'");
+        System.out.println("'" + StringUtils.trimToEmpty(null));
+        System.out.println("'" + StringUtils.trimToEmpty("") + "'");
+        System.out.println("'" + StringUtils.trimToEmpty("   " + "'"));
+
+        Character c = '\u2000';
+        System.out.println("'" + c + "'");
     }
 }
