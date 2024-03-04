@@ -190,4 +190,10 @@ public class String {
         String line = "Line 1\nLine 2\rLine 3\r\nLine 4";
         line.lines().forEach(System.out::println);
     }
+
+    private static void trim(){
+        System.out.println("\nStringUtils methods trim():\n");
+
+        
+    }
 }
