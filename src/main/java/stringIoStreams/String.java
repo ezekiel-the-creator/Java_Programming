@@ -126,5 +126,14 @@ public class String {
         System.out.println("abc1".matches("[a-z]+"));
     }
 
+    private static void format (){
+        System.out.println("\nString method format():");
+        String t = "Hey, %s! Give me %d apples, please!";
+        System.out.println(String.format(t, "Nick", 2));
+        String t1 = String.format(t, "Nick", 2);
+        System.out.println(t1);
+        System.out.println(String.format("Hey, %s! Give me %d apples, please", "Nick", 2));
+    }
+
 
 }
