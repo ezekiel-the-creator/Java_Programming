@@ -118,7 +118,12 @@ public class String {
         System.out.println(s4.compareToIgnoreCase(s5));
         System.out.println(s4.codePointAt(0));
         System.out.println(s5.codePointAt(0))
+    }
 
+    private static void matches(){
+        System.out.println("\nString method matches():");
+        System.out.println("abc".matches("[a-z]+"));
+        System.out.println("abc1".matches("[a-z]+"));
     }
 
 
