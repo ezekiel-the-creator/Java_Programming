@@ -135,5 +135,9 @@ public class String {
         System.out.println(String.format("Hey, %s! Give me %d apples, please", "Nick", 2));
     }
 
-
+    private static void toLowerUpperCase(){
+        System.out.println("\nString methods toLowerCase() and toUpperCase():");
+        System.out.println("aBc".toLowerCase());
+        System.out.println("aBc".toUpperCase());
+    }
 }
