@@ -110,5 +110,14 @@ public class String {
         System.out.println(newStr2);
     }
 
+    private static void compareTo() {
+        System.out.println("\nString methods compareTo() and compareToIgnoreCase():");
+        String s4 = "aBc";
+        String s5 = "Abc";
+        System.out.println(s4.compareTo(s5));
+        Sytem.out.println(s4.compareToIgnoreCase(s5));
+        
+    }
+
 
 }
