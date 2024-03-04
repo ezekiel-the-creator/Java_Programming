@@ -194,6 +194,11 @@ public class String {
     private static void trim(){
         System.out.println("\nStringUtils methods trim():\n");
 
+        System.out.println("'" + StringUtils.trim(" x ") + "'");
+        System.out.println(StringUtils.trim(null));
+        System.out.println("'" + StringUtils.trim("") + "'");
+        System.out.println("'" + StringUtils.trim("   ") + "'");
+
         
     }
 }
