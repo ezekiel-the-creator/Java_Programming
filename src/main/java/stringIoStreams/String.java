@@ -115,8 +115,10 @@ public class String {
         String s4 = "aBc";
         String s5 = "Abc";
         System.out.println(s4.compareTo(s5));
-        Sytem.out.println(s4.compareToIgnoreCase(s5));
-        
+        System.out.println(s4.compareToIgnoreCase(s5));
+        System.out.println(s4.codePointAt(0));
+        System.out.println(s5.codePointAt(0))
+
     }
 
 
