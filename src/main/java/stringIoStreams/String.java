@@ -162,5 +162,10 @@ public class String {
         System.out.println(sf);
     }
 
-    
+    private static void repeat(){
+        System.out.println("\nString method repeat():");
+        System.out.println("ab".repeat(3));
+        System.out.println("ab".repeat(1));
+        System.out.println("ab".repeat(0));
+    }
 }
