@@ -140,4 +140,10 @@ public class String {
         System.out.println("aBc".toLowerCase());
         System.out.println("aBc".toUpperCase());
     }
+
+    private static void isEmpty(){
+        System.out.println("\nString method isEmpty():");
+        System.out.println("".isEmpty());
+        System.out.println(" ".isEmpty());
+    }
 }
