@@ -23,7 +23,9 @@ public class ArraysUtils {
         System.out.println(arr3.equals(arr4));
         System.out.println(Arrays.equals(arr3, arr4)); //false
         System.out.println(Arrays.deepEquals(arr3, arr4)); //true
-
-
+        
+        Integer[][] ar1 = {{42}};
+        Integer[][] ar2 = {{42}};
+        System.out.print(Arrays.equals(ar1, ar2) + " ");
     }
 }
