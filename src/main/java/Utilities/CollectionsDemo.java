@@ -53,5 +53,10 @@ public class CollectionsDemo {
         //coll = Set.of("s2", "s3", null); // does not allow null
         coll = Set.of("s3", "s4");
         System.out.println(coll); //prints: [s3, s4] or [s4, s3]
+
+        //coll.add("s5");
+        //coll.remove("s2");
     }
+
+    
 }
