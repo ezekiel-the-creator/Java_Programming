@@ -27,4 +27,17 @@ public class CollectionsDemo {
         map();
         unmodifiable();
     }
+
+    private static void unmodifiable(){
+        System.out.println("\nmodifiable():");
+
+        Person1 p1 = new Person1(45, "Ezek");
+        List<Person1> list = List.of(p1);
+        //list.add(new Person1(22, "Bob")) //UnsupportedOperationExeption
+        System.out.println(list);
+        p1.setName("Kelly");
+        System.out.println(list);
+    }
+
+    pri
 }
