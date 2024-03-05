@@ -29,4 +29,10 @@ public class ArraysUtils {
         System.out.print(Arrays.equals(ar1, ar2) + " ");
         System.out.println(Arrays.deepEquals(arr3, arr4));
     }
+
+    private static void arrayUtils(){
+        System.out.println("\narrayUtils():");
+
+        String[] arr1 = { "s1", "s2" };
+    }
 }
