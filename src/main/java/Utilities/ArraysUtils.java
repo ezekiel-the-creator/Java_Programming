@@ -18,6 +18,11 @@ public class ArraysUtils {
         System.out.println(Arrays.equals(arr1, arr2));
         System.out.println(Arrays.deepEquals(arr1, arr2));
 
-        String[][] arr3 = {{"s1", "s2"}}
+        String[][] arr3 = {{"s1", "s2"}};
+        String[][] arr4 = {{"s1", "s2"}};
+        System.out.println(Arrays.equals(arr3, arr4));
+        System.out.println(Arrays.deepEquals(arr3, arr4));
+
+        
     }
 }
