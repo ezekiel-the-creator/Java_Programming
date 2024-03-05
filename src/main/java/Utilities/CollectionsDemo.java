@@ -57,6 +57,18 @@ public class CollectionsDemo {
         //coll.add("s5");
         //coll.remove("s2");
     }
-
     
+    private static void initialize2(){
+        System.out.println("\ninitialize2():");
+
+        List<String> list1 = new ArrayList<>();
+        list1.add("s1");
+        list1.add("s1");
+        System.out.println(list1);
+
+        Set<String> set1 = new HashSet<>();
+        set1.add("s1");
+        set1.add("s1");
+        System.out.println(set1);
+    }
 }
