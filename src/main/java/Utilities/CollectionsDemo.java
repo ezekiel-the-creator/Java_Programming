@@ -39,5 +39,8 @@ public class CollectionsDemo {
         System.out.println(list);
     }
 
-    pri
+    private static void intialize1(){
+        System.out.println("
+    ")
+    }
 }
