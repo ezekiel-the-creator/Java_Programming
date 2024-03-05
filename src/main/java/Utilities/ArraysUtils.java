@@ -34,5 +34,13 @@ public class ArraysUtils {
         System.out.println("\narrayUtils():");
 
         String[] arr1 = { "s1", "s2" };
+        String[] arr2 = { null };
+        String[] arr3 = null;
+
+        System.out.print(ArrayUtils.getLength(arr1) + " ");
+        System.out.print(ArrayUtils.getLength(arr2) + " ");
+        System.out.print(ArrayUtils.getLength(arr3) + " ");
+        System.out.println(ArrayUtils.isEmpty(arr2));
+        System.out.println(ArrayUtils.isEmpty(arr3));
     }
 }
