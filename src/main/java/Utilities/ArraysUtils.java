@@ -20,9 +20,10 @@ public class ArraysUtils {
 
         String[][] arr3 = {{"s1", "s2"}};
         String[][] arr4 = {{"s1", "s2"}};
-        System.out.println(Arrays.equals(arr3, arr4));
-        System.out.println(Arrays.deepEquals(arr3, arr4));
+        System.out.println(arr3.equals(arr4));
+        System.out.println(Arrays.equals(arr3, arr4)); //false
+        System.out.println(Arrays.deepEquals(arr3, arr4)); //true
 
-        
+
     }
 }
