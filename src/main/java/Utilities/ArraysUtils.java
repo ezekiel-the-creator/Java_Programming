@@ -37,10 +37,10 @@ public class ArraysUtils {
         String[] arr2 = { null };
         String[] arr3 = null;
 
-        System.out.print(ArrayUtils.getLength(arr1) + " ");
-        System.out.print(ArrayUtils.getLength(arr2) + " ");
-        System.out.print(ArrayUtils.getLength(arr3) + " ");
-        System.out.println(ArrayUtils.isEmpty(arr2));
-        System.out.println(ArrayUtils.isEmpty(arr3));
+        System.out.print(ArrayUtils.getLength(arr1) + " "); //prints: 2
+        System.out.print(ArrayUtils.getLength(arr2) + " "); //prints: 1
+        System.out.print(ArrayUtils.getLength(arr3) + " "); //prints: 0
+        System.out.println(ArrayUtils.isEmpty(arr2));       //prints: false
+        System.out.println(ArrayUtils.isEmpty(arr3));       //prints: true
     }
 }
