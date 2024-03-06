@@ -71,4 +71,37 @@ public class CollectionsDemo {
         set1.add("s1");
         System.out.println(set1);
     }
+
+    private static void initailize3(){
+        System.out.println("\ninitialize3():");
+
+        List<String> list1 = new ArrayList<>();
+        list1.add("s1");
+        list1.add("s1");
+        System.out.println(list1); //[s1, s1]
+
+        List<String> list2 = new ArrayList<>();
+        list2.addAll(list1);
+        System.out.println(list2);
+
+        Set<String> set = new HashSet<>();
+        set.addAll(list1);
+        System.out.println(set);
+
+        Set<String> set1 = new HashSet<>();
+        set1.add("s1");
+
+        Set<String> set2 = new HashSet<>();
+        set2.add("s1");
+        set2.add("s2");
+
+        System.out.println(set1.addAll(set2));
+        System.out.println(set1);
+    }
+
+    private static void initialize4(){
+        System.out.println("\ninitialize4():");
+
+        Set<String> set = new HashSet();
+    }
 }
