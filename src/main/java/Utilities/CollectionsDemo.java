@@ -102,6 +102,22 @@ public class CollectionsDemo {
     private static void initialize4(){
         System.out.println("\ninitialize4():");
 
-        Set<String> set = new HashSet();
+        Set<String> set = new HashSet<>();
+        System.out.println(set.add("s1"));
+        System.out.println(set.add("s1"));
+        System.out.println(set);
+
+        Set<String> set1 = new HashSet<>();
+        set1.add("s1");
+        set1.add("s2");
+        
+        Set<String> set2 = new HashSet<>();
+        set2.add("s1");
+        set2.add("s2");
+
+        System.out.println(set1.addAll(set2));
+        System.out.println(set1);
     }
+
+    
 }
