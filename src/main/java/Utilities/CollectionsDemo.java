@@ -149,5 +149,33 @@ public class CollectionsDemo {
         System.out.println();
     }
 
-    
+    private static void equals(){
+        System.out.println("\nequals():");
+
+        Collection<String> list1 = List.of("s1", "s2", "s3");
+        System.out.println(list1);
+
+        Collection<String> list2 = List.of("s1", "s2", "s3");
+        System.out.println(list2);
+
+        System.out.println(list1.equals(list2));
+
+        Collection<String> list3 = List.of("s2", "s1", "s3");
+        System.out.println(list3);
+
+        System.out.println(list1.equals(list3));
+
+        Collection<String> set1 = Set.of("s1", "s2", "s3");
+        System.out.println(set1);
+
+        Collection<String> set2 = Set.of("s2", "s1", "s3");
+        System.out.println(set2);
+
+        System.out.println(set1.equals(set2));
+
+        Collection<String> set3 = Set.of("s4", "s1", "s3");
+        System.out.println(set3);
+
+        System.out.println(set1.equals(set3));
+    }
 }
