@@ -119,5 +119,21 @@ public class CollectionsDemo {
         System.out.println(set1);
     }
 
+    private static void initialize5(){
+        System.out.println("\ninitialize5():");
+
+        Collection<String> list1 = List.of("s1", "s2", "s2");
+        System.out.println(list1);
+
+        List<String> list2 = new ArrayList<>(list1);
+        System.out.println(list2);
+
+        Set<String> set = new HashSet<>(list1);
+        System.out.println(set);
+
+        List<String> list3 = new ArrayList<>(set);
+        System.out.println(list3);
+    }
+
     
 }
