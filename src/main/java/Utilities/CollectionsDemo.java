@@ -135,5 +135,19 @@ public class CollectionsDemo {
         System.out.println(list3);
     }
 
+    private static void iterable(){
+        System.out.println("\nIterable():");
+
+        Iterable<String> list = List.of("s1", "s2", "s3");
+        System.out.println(list);
+
+        for(String e: list){
+            System.out.print(e + " ");
+        }
+        System.out.println();
+        list.forEach(e -> System.out.print(e + " "));
+        System.out.println();
+    }
+
     
 }
