@@ -300,4 +300,59 @@ public class CollectionsDemo {
         System.out.println();
         list.forEach(System.out::println);
     }
+
+    private static class Person implements Comparable<Person> {
+        private int age;
+        private String name;
+
+        public Person(int age, String name) {
+            this.age = age;
+            this.name = name == null ? "" : name;
+        }
+
+        public int getAge(){ return this.age;}
+
+        public String getName(){ return this.name;}
+
+        @Override
+        public int compareTo(Person p){
+            //return age - p.getAge();
+            //return name.compareTo(p.getName());
+            int result = this.name.compareTo(p.getName());
+            if(result != 0) {
+                return result;
+            }
+            return this.age - p.getAge();
+        }
+
+        @Override
+        public int hashCode(){
+            return Objects.hash(age, name);
+        }
+
+        @Override
+        public String toString() {
+            return "Person{age=" + age + ", name =" + name + "}";
+        }
+    }
+
+    private static class Person1{
+        private int age;
+        private String name;
+
+        public Person1(int age, String name) {
+            this.age = age;
+            this.name = name == null ? "" : name;
+        }
+
+        public void setName(String name){ this.name = name;}
+        @Override
+        public String toString() {
+            return "Person{age=}" + age + ", name=" + name + "}";
+        }
+    }
+
+    private static void map(){
+        System.out.pri
+    }
 }
