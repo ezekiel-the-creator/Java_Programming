@@ -233,5 +233,36 @@ public class CollectionsDemo {
         System.out.println();
     }
 
+    private static void sort1(){
+        System.out.println("\nsort1():");
+
+        List<String> list = new ArrayList<>();
+        list.add("s2");
+        list.add("s3");
+        list.add("s1");
+        System.out.println(list);       //prints: [S2, s3, s1]
+
+        list.sort(String.CASE_INSENSITIVE_ORDER);
+        System.out.println(list);       //prints: [s1, S2, s3]
+
+        list.sort(Comparator.naturalOrder());
+        System.out.println(list);       //prints: [S2, s1, s3]
+
+        list.sort(Comparator.reverseOrder());
+        System.out.println(list);       //prints: [s3, s1, S2]
+
+        list.add(null);
+        list.sort(Comparator.nullsFirst(Comparator.naturalOrder()));
+        System.out.println(list);
+
+        list.sort(Comparator.nullsLast(Comparator.naturalOrder()));
+        System.out.println(list);
+
+        Comparator<String> comparator = (s1, s2) ->
+            s1 == null ? -1 : s1.compareTo(s2);
+        list.sort(comparator);
+        System.out.println(list);       
+    }
+
     
 }
