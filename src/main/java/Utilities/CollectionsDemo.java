@@ -364,7 +364,7 @@ public class CollectionsDemo {
         System.out.println();
         
         for(Map.Entry e: map.entrySet()){
-            System.out
+            System.out.print(e.getKey() + ", " + e.getValue() + ", "); //prints: 2, s2, s3, 1, s1,
         }
     }
 }
