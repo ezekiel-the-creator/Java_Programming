@@ -178,4 +178,31 @@ public class CollectionsDemo {
 
         System.out.println(set1.equals(set3));
     }
+
+    private static void copyOf(){
+        System.out.println("\ncopyOf():");
+
+        Collection<String> list = List.of("s1", "s2", "s3");
+        System.out.println(list);
+
+        List<String> list1 = List.copyOf(list);
+        //list1.add("s4");      //run-time error
+        //list1.set(1, "s5");       //run-time error
+        //list1.remove("s1");
+
+        Set<String> set = new HashSet<>();
+        System.out.println(set.add("s1"));
+        System.out.println(set);
+
+        Set<String> set1 = Set.copyOf(set);
+        //set1.add("s2");       //run-time error
+        //set1.remove("s1");    //run-time error
+
+        Set<String> set2 = Set.copyOf(list);
+        System.out.println(set2);
+    }
+
+    private static void listIterator(){
+        System.out.println("\nlist")
+    }
 }
