@@ -203,6 +203,35 @@ public class CollectionsDemo {
     }
 
     private static void listIterator(){
-        System.out.println("\nlist")
+        System.out.println("\nlistIterator():");
+
+        List<String> list = List.of("s1", "s2", "s3");
+        ListIterator<String> li = list.listIterator();
+
+        while(li.hasNext()){
+            System.out.print(li.next() + " ");  //prints: s1 s2 s3
+        }
+
+        System.out.println();
+
+        while(li.hasPrevious()){
+            System.out.println(li.previous() + " ");
+        }
+
+        System.out.println();
+
+        ListIterator<String> li1 = list.listIterator(1);
+        while(li1.hasNext()){
+            System.out.print(li1.next() + " ");
+        }
+        System.out.println();
+
+        ListIterator<String> li2 = list.listIterator(1);
+        while(li2.hasPrevious()){
+            System.out.print(li2.previous() + " ");
+        }
+        System.out.println();
     }
+
+    
 }
