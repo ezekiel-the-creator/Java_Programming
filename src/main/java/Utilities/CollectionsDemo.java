@@ -11,6 +11,10 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
+import afu.org.checkerframework.checker.units.qual.C;
+import oop_java.Encapsulation.Person;
+import stringIoStreams.Person1;
+
 public class CollectionsDemo {
     public static void main(String... args) {
         initialize1();
@@ -264,5 +268,36 @@ public class CollectionsDemo {
         System.out.println(list);       
     }
 
-    
+    private static void sort2(){
+        System.out.println("\nsort2():");
+
+        List<Person> list = new ArrayList<>();
+        list.add(new Person(21, "Ezek"));
+        list.add(new Person(19, "Gina"));
+        list.add(new Person(21, "Mo"));
+        list.add(new Person(30, "Mo"));
+
+        System.out.println();
+        list.forEach(System.out::println);
+
+        list.sort(Comparator.naturalOrder());
+        System.out.println();
+        list.forEach(System.out::println);
+
+        list.sort(Comparator.reverseOrder());
+        System.out.println();
+        list.forEach(System.out::println);
+
+        list.sort(Comparator.comparing(Person::getName));
+        System.out.println();
+        list.forEach(System.out::println);
+
+        list.sort(Comparator.comparing(Person::getAge));
+        System.out.println();
+        list.forEach(System.out::println);
+
+        list.sort(Comparator.comparing(Person::getName).thenComparing(Person::getAge));
+        System.out.println();
+        list.forEach(System.out::println);
+    }
 }
