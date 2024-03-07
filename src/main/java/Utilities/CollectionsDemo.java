@@ -363,6 +363,8 @@ public class CollectionsDemo {
 
         System.out.println();
         
-        for.
+        for(Map.Entry e: map.entrySet()){
+            System.out
+        }
     }
 }
