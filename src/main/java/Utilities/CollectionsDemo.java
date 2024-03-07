@@ -353,6 +353,12 @@ public class CollectionsDemo {
     }
 
     private static void map(){
-        System.out.pri
+        System.out.println("\nmap():");
+
+        Map<Integer, String>map = Map.of(1, "s1", 2, "s2", 3, "s3");
+
+        for(Integer key: map.keySet()){
+            System.out.print(key + ", " + map.get(key) + ", ");
+        }
     }
 }
