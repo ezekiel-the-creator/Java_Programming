@@ -23,4 +23,15 @@ public class ObjectUtils {
         System.out.println(Objects.deepEquals(x1, x2)); 
         System.out.println(Objects.deepEquals(x1, y)); 
     } 
+
+    private static void hash(){
+        System.out.println("\nhash():");
+        System.out.println(Objects.hash(42) == Objects.hashCode(42));  //prints: false
+        System.out.println(Objects.hash("abc") == Objects.hashCode("abc"));  //prints: false
+        System.out.println(Objects.hash(null));  //prints: 0
+        System.out.println(Objects.hashCode(null));  //prints: 0
+        System.out.println(Objects.hash(0));  //prints: 31
+        System.out.println(Objects.hashCode(0));  //prints: 0
+    }
+
 }
