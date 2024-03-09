@@ -34,4 +34,23 @@ public class ObjectUtils {
         System.out.println(Objects.hashCode(0));  //prints: 0
     }
 
+    private static void tostring(){
+        List<String> list = Arrays.asList("s1", null);
+        for(String e: list){
+            //String s = e.toString();  //NullPointerException
+            String s = e == null ? "null" : e.toString();
+        }
+        System.out.println();
+        for(String e: list){
+            String s = Objects.toString(e);
+            System.out.print(s + " "); //prints: s1 null
+        }
+        System.out.println();
+        for(String e: list){
+            String s = Objects.toString(e, "element was null");
+            System.out.print(s + " "); //prints: s1 element was null
+        }
+    }
+    
+
 }
