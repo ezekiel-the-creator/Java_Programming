@@ -111,4 +111,31 @@ public class TimeRelatedClasses {
         System.out.println(lt2.isAfter(lt4));
         System.out.println(lt2.isBefore(lt4));
     }
+
+    private static void localDateTime(){
+        System.out.println("\nlocalDateTime():");
+
+        System.out.println(LocalDateTime.now());
+
+        ZoneId zoneId = ZoneId.of("Asia/Tokyo");
+        System.out.println(LocalDateTime.now(zoneId)); 
+        LocalDateTime ldt1 =  LocalDateTime.parse("2020-02-23T20:23:12");
+        System.out.println(ldt1);                 
+        DateTimeFormatter formatter =
+                DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        LocalDateTime ldt2 =
+                LocalDateTime.parse("23/02/2020 20:23:12", formatter);
+        System.out.println(ldt2);                 
+        LocalDateTime ldt3 = LocalDateTime.of(2020, 2, 23, 20, 23, 12);
+        System.out.println(ldt3);                 
+        LocalDateTime ldt4 =
+                LocalDateTime.of(2020, Month.FEBRUARY, 23, 20, 23, 12);
+        System.out.println(ldt4);                     
+        LocalDate ld = LocalDate.of(2020, 2, 23);
+        LocalTime lt =  LocalTime.of(20, 23, 12);
+        LocalDateTime ldt5 = LocalDateTime.of(ld, lt);
+        System.out.println(ldt5);               
+    }
+
+    
 }
