@@ -72,6 +72,12 @@ public class TimeRelatedClasses {
         System.out.println(lc6.plusYears(2));       
         System.out.println(lc6.minusDays(10));      
         System.out.println(lc6.minusMonths(2));     
-        System.out.println(lc6.minusYears(2));  
+        System.out.println(lc6.minusYears(2));
+        
+        System.out.println("\nlocalDate(): compare 2023-02-23 and 2023-02-22");
+        LocalDate lc7 =  LocalDate.parse("2023-02-22");
+        System.out.println(lc6.isAfter(lc7));       
+        System.out.println(lc6.isBefore(lc7));
     }
+
 }
