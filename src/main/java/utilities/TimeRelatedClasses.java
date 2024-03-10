@@ -61,5 +61,17 @@ public class TimeRelatedClasses {
         System.out.println(lc6.isLeapYear());     
         System.out.println(lc6.lengthOfMonth());  
         System.out.println(lc6.lengthOfYear());  
+
+        System.out.println("\nlocalDate(): date 2023-02-23 modified");
+        System.out.println(lc6.withYear(2024));     
+        System.out.println(lc6.withMonth(5));       
+        System.out.println(lc6.withDayOfMonth(5));  
+        System.out.println(lc6.withDayOfYear(53));  
+        System.out.println(lc6.plusDays(10));       
+        System.out.println(lc6.plusMonths(2));      
+        System.out.println(lc6.plusYears(2));       
+        System.out.println(lc6.minusDays(10));      
+        System.out.println(lc6.minusMonths(2));     
+        System.out.println(lc6.minusYears(2));  
     }
 }
