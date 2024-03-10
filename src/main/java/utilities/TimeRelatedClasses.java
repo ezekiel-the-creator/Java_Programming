@@ -141,5 +141,44 @@ public class TimeRelatedClasses {
         System.out.println("\nperiodAndDuration():");
 
 
+        LocalDateTime ldt1 = LocalDateTime.parse("2023-02-23T20:23:12");
+        LocalDateTime ldt2 = ldt1.plus(Period.ofYears(2));
+        System.out.println(ldt2);      
+
+        LocalDateTime ldt = LocalDateTime.parse("2023-02-23T20:23:12");
+        ldt.minus(Period.ofYears(2));
+        ldt.plus(Period.ofMonths(2));
+        ldt.minus(Period.ofMonths(2));
+        ldt.plus(Period.ofWeeks(2));
+        ldt.minus(Period.ofWeeks(2));
+        ldt.plus(Period.ofDays(2));
+        ldt.minus(Period.ofDays(2));
+        ldt.plus(Duration.ofHours(2));
+        ldt.minus(Duration.ofHours(2));
+        ldt.plus(Duration.ofMinutes(2));
+        ldt.minus(Duration.ofMinutes(2));
+        ldt.plus(Duration.ofMillis(2));
+        ldt.minus(Duration.ofMillis(2));
+
+        LocalDate ld1 =  LocalDate.parse("2023-02-23");
+        LocalDate ld2 =  LocalDate.parse("2023-03-25");
+        Period period = Period.between(ld1, ld2);
+        System.out.println(period.getDays());       
+        System.out.println(period.getMonths());     
+        System.out.println(period.getYears());      
+        System.out.println(period.toTotalMonths()); 
+        period = Period.between(ld2, ld1);
+        System.out.println(period.getDays());       
+
+        LocalTime lt1 =  LocalTime.parse("10:23:12");
+        LocalTime lt2 =  LocalTime.parse("20:23:14");
+        Duration duration = Duration.between(lt1, lt2);
+        System.out.println(duration.toDays());     
+        System.out.println(duration.toHours());    
+        System.out.println(duration.toMinutes());  
+        System.out.println(duration.toSeconds());  
+        System.out.println(duration.getSeconds()); 
+        System.out.println(duration.toNanos());    
+        System.out.println(duration.getNano());    
     }
 }
