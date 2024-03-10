@@ -137,5 +137,9 @@ public class TimeRelatedClasses {
         System.out.println(ldt5);               
     }
 
-    
+    private static void periodAndDuration(){    //Contain ammount of time Period -> in years/months/days Duration -> Hours/Minutes/Seconds
+        System.out.println("\nperiodAndDuration():");
+
+
+    }
 }
