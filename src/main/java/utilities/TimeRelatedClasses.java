@@ -80,4 +80,35 @@ public class TimeRelatedClasses {
         System.out.println(lc6.isBefore(lc7));
     }
 
+    private static void localTime(){
+        System.out.println("\nlocalTime():");
+
+        System.out.println(localTime.now());
+
+        ZoneId zoneId = zoneId.of("Asia/Tokyo");
+        System.out.println(LocalTime.now(zoneId));
+
+        LocalTime lt1 = LocalTime.parse("20:23:12");
+        System.out.println(lt1);
+
+        LocalTime lt2 = LocalTime.of(20, 23, 12);
+        System.out.println(lt2);
+
+        System.out.println(lt2.getHour());
+        System.out.println(lt2.getMinute());
+        System.out.println(lt2.getSecond());
+        System.out.println(lt2.getNano());
+
+        System.out.println(lt2.withHour(3));
+        System.out.println(lt2.withMinute(10));
+        System.out.println(lt2.withSecond(15));
+        System.out.println(lt2.withNano(300));
+        System.out.println(lt2.plusHours(10));
+        System.out.println(lt2.plusMinutes(2));
+        System.out.println(lt2.plusSeconds(20));
+
+        LocalTime lt4 = LocalTime.parse("20:25:12");
+        System.out.println(lt2.isAfter(lt4));
+        System.out.println(lt2.isBefore(lt4));
+    }
 }
