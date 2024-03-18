@@ -8,5 +8,8 @@ import java.sql.Types;
 import java.util.Properties;
 
 public class CallableStatementDemo {
-    
+    String result = "";
+    String sql = "{ ? = call replace(?, ?, ? )}";
+    Connection conn = getConnection();
+    try (conn; CallableStatement st = conn.prepareCall(sql))
 }
