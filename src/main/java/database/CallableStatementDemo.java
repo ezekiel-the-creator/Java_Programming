@@ -22,5 +22,17 @@ public class CallableStatementDemo {
         String result = "";
         String sql = "{ ? = call replace(?, ?, ?)}";
         Connection conn = getConnection();
+
+        try (conn; CallableStatement st = conn.prepareCall(sql)) {
+            st.registerOutParameter(1, Types.VARCHAR);
+            st.setString(2, origText);
+            st.setString(3, substr1);
+            st.setString(4, substr2);
+            st.execute();
+            result = st.getString(1);
+        } catch (Exception ex){
+            ex.printStackTrace();
+        }
+        return result;
     }
 }
