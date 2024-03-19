@@ -21,5 +21,6 @@ public class CallableStatementDemo {
     private static String replace(String origText, String substr1, String substr2) {
         String result = "";
         String sql = "{ ? = call replace(?, ?, ?)}";
+        Connection conn = getConnection();
     }
 }
