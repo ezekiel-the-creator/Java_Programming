@@ -8,8 +8,15 @@ import java.sql.Types;
 import java.util.Properties;
 
 public class CallableStatementDemo {
-    String result = "";
-    String sql = "{ ? = call replace(?, ?, ? )}";
-    Connection conn = getConnection();
-    try (conn; CallableStatement st = conn.prepareCall(sql))
+    public static void main(String... args){
+        //First create database to run the code below
+
+        /* 
+         * String result = replace("That is original text", 
+         * "original text", "the result");
+         * System.out.print(result);
+         */
+    }
+
+    private static String replace(String origText, String)
 }
