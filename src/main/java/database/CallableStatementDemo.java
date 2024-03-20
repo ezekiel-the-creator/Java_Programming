@@ -35,4 +35,17 @@ public class CallableStatementDemo {
         }
         return result;
     }
+
+    private static Connection getConnection () {
+        String URL = "jdbc:postgresql://localhost/learnjava";
+        Properties prop = new Properties();
+        prop.put("user", "student");
+        // prop.put( "password", "secretPass123")
+        try {
+            return DriverManager.getConnection(URL, prop);
+        } catch (SQLException ex) {
+            ex.printStackTrace();
+        }
+        return null;
+    }
 }
